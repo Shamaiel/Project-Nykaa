@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<style>
+    #parent{
+        display: flex;
+        justify-content: center;
+        background-color: rgb(243,243,243);
+    }
+    #parent>div{
+        width: 27%;
+        margin-top: 70px;
+       border: 1px solid gainsboro;
+       background-color: rgb(255,255,255);
+        text-align: center;
+        justify-content: center;
+       font-size: 16px;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        border-radius: 10px 10px 0px 0px;
+       
+    }
+    #number{
+        display: flex;
+        width: 80%;
+        height: 35px;
+      
+     text-align: center;
+     margin-left: 33px;
+     background-color: rgb(243,243,243);
+     border: 1px solid red;
+    
+    }
+    #button{
+        width: 75%;
+        height: 50px;
+        margin-top: 150px;
+        color: white;
+        font-size: 16px;
+        margin-bottom: 350px;
+       background-color: rgb(252,39,121);
+       border: none;
+       border-radius: 5px 5px 5px 5px;
+    }
+</style>
+<body>
+ <div id="parent">
+    <div>
+        <h2>LOGIN/REGISTER</h2>
+        <hr>
+        <input placeholder="Enter Email Id or Phone Number" id="number">
+        <button id="button">PROCEED</button>
+    </div>
+ </div>
+
+</body>
+</html>
+<script>
+    document.getElementById("button").addEventListener("click",check)
+    var detailarr=JSON.parse(localStorage.getItem("credentials"))||[]
+    function check(){
+        var detail=document.getElementById("number").value
+        if(present(detail)){
+            alert("Already signed up.")
+        }
+        else{
+        var obj={
+            details:detail
+        }
+        detailarr.push(obj)
+        localStorage.setItem("credentials",JSON.stringify(detailarr))
+    }
+    }
+    function present(detail){
+        console.log(detail)
+        for(var i=0;i<detailarr.length;i++){
+             if(detailarr[i].details===detail){
+                return true;
+             }
+        }
+        return false;
+    }
+   
+</script>
