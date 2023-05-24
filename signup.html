@@ -18,7 +18,7 @@
     }
     #parent>div{
         width: 27%;
-        margin-top: 60px;
+        margin-top: 70px;
        border: 1px solid gainsboro;
        background-color: rgb(255,255,255);
         text-align: center;
@@ -31,13 +31,23 @@
     #number{
         display: flex;
         width: 80%;
-        height: 40px;
+        height: 35px;
       
      text-align: center;
      margin-left: 33px;
      background-color: rgb(243,243,243);
      border: 1px solid red;
     
+    }
+    .num{
+        display: flex;
+        width: 80%;
+        height: 35px;
+      margin-top: 20px;
+     text-align: center;
+     margin-left: 33px;
+     background-color: rgb(243,243,243);
+     border: 1px solid red;
     }
     #button{
         width: 75%;
@@ -50,51 +60,27 @@
        border: none;
        border-radius: 5px 5px 5px 5px;
     }
+    #highlight{
+        color: rgb(252,39,121); ;
+    }
 </style>
 <body>
  <div id="parent">
     <div>
-        <h2>LOGIN/REGISTER</h2>
+        <h2>REGISTER</h2>
         <hr>
-        <input placeholder="Enter Email Id or Phone Number" id="number">
-        <button id="button">PROCEED</button>
+        <h4>Register to earn <span id="highlight">2000 Reward Points</span></h4>
+
+        <input placeholder="Enter Name" id="number">
+     
+
+        <input placeholder="Enter Email Id " class="num">
+
+        <input placeholder="Enter Mobile Number" class="num">
+
+        <button id="button">SUBMIT</button>
     </div>
  </div>
 
 </body>
 </html>
-<script>
-    document.getElementById("button").addEventListener("click",check)
-    var detailarr=JSON.parse(localStorage.getItem("credentials"))||[]
-    function check(){
-        var detail=document.getElementById("number").value
-        if(present(detail)){
-            alert("Already signed up.")
-           
-        }
-    
-        else{
-        var obj={
-            details:detail
-        }
-        detailarr.push(obj)
-        localStorage.setItem("credentials",JSON.stringify(detailarr))
-        signup()
-    }
-    }
-    function present(detail){
-        console.log(detail)
-        for(var i=0;i<detailarr.length;i++){
-             if(detailarr[i].details===detail){
-                return true;
-             }
-        }
-        return false;
-    }
-
-  function signup(){
-    window.location.href = "signup.html";
-  }
-   
-   
-</script>
