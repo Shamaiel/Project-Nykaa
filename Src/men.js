@@ -1,8 +1,75 @@
 
 var mensProducts=[
+
+    {
+        image_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/c/1/c157735nymcfn0000032_nkw1.jpg",
+        desc:"MCaffeine Naked & Raw Tan Removal Coffee Face Mask",
+        max:645,
+        price:550,
+        off:"30% OFF",
+        rating: '★★★★★'
+    } , 
+    {
+        image_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/b/8/b8e2578nykmcf0000009_1rvm.jpg",
+        desc:"MCaffeine Coffee Hydrating Face Serum For Glowing Skin with ...",
+        max:575,
+        price:450,
+        off:"25% OFF",
+        rating: '★★★★★'
+    } ,
+    {
+        image_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/3/3/3349666007891.jpg",
+        desc:"Paco Rabanne 1 Million Eau De Toilette",
+        max:4500,
+        price:3000,
+        off:"45% OFF",
+        rating: '★★★★★'
+    } ,  
+    {
+        image_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/4/0/4045787232233_1.jpg",
+        desc:"Schwarzkopf Professional Osis + Session Label Strong Hold Ha...",
+        max:750,
+        price:600,
+        off:"30% OFF",
+        rating: '★★★★★'
+    } , 
+    {
+        image_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/7/0/7027578nymcfn0000026_1rvm.jpg",
+        desc:"MCaffeine Naked & Rich Deep Moisturizing Choco Body Lotion",
+        max:400,
+        price:300,
+        off:"20% OFF",
+        rating: '★★★★★'
+    } ,  
+    {
+        image_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/1/a/1a28038NYMCFCOM00062_1.jpg",
+        desc:"MCaffeine Coffee-Choco Cocktail Kit - Relax & De-Stress",
+        max:850,
+        price:600,
+        off:"35% OFF",
+        rating: '★★★★★'
+    } ,  
+    {
+        image_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/c/0/c084a91NYKAB00000507_1.jpg",
+        desc:"Nykaa SKINRX 5% Niacinamide Spot Correct Day Moisturiser",
+        max:399,
+        price:299,
+        off:"25% OFF",
+        rating: '★★★★★'
+    } , 
+    {
+        image_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/7/8/783320971563_2_.jpg",
+        desc:"BVLGARI Man In Black Eau De Parfum hfeu eukwf uefhu wefuh webfjek fwejbjk ujwefu",
+        max:8999,
+        price:6500,
+        off:"30% OFF",
+        rating: '★★★★★'
+    } ,
+    
+
     {
         image_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/b/e/beardo-hair-growth-oil.jpg",
-        desc:"Beardo Hair Growth Oil",
+        desc:"Beardo Hair Growth Oil bdfejkwdfjwfdjwefjwfe bewfwkf wejkfbejkwfbe",
         max:750,
         price:650,
         off:"25% OFF",
@@ -34,7 +101,7 @@ var mensProducts=[
     } ,  
     {
         image_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/f/1/f1f1e04NYMCFN0000035_nws1.jpg",
-        desc:"MCaffeine Coffee Look Gift Kitl",
+        desc:"MCaffeine Coffee Look Gift Kitl lorem h fhe ekhfeu ehfik ejkfeu ekfe",
         max:2550,
         price:1999,
         off:"10% OFF",
@@ -95,97 +162,156 @@ var mensProducts=[
         price:650,
         off:"25% OFF",
         rating: '★★★★★'
-    } ,  
-    {
-        image_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/c/1/c157735nymcfn0000032_nkw1.jpg",
-        desc:"MCaffeine Naked & Raw Tan Removal Coffee Face Mask",
-        max:645,
-        price:550,
-        off:"30% OFF",
-        rating: '★★★★★'
-    } , 
-    {
-        image_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/b/8/b8e2578nykmcf0000009_1rvm.jpg",
-        desc:"MCaffeine Coffee Hydrating Face Serum For Glowing Skin with ...",
-        max:575,
-        price:450,
-        off:"25% OFF",
-        rating: '★★★★★'
-    } ,
-    {
-        image_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/3/3/3349666007891.jpg",
-        desc:"Paco Rabanne 1 Million Eau De Toilette",
-        max:4500,
-        price:3000,
-        off:"45% OFF",
-        rating: '★★★★★'
-    } ,  
-    {
-        image_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/4/0/4045787232233_1.jpg",
-        desc:"Schwarzkopf Professional Osis + Session Label Strong Hold Ha...",
-        max:750,
-        price:600,
-        off:"30% OFF",
-        rating: '★★★★★'
-    } , 
-    {
-        image_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/7/0/7027578nymcfn0000026_1rvm.jpg",
-        desc:"MCaffeine Naked & Rich Deep Moisturizing Choco Body Lotion",
-        max:400,
-        price:300,
-        off:"20% OFF",
-        rating: '★★★★★'
-    } ,  
-    {
-        image_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/1/a/1a28038NYMCFCOM00062_1.jpg",
-        desc:"MCaffeine Coffee-Choco Cocktail Kit - Relax & De-Stress",
-        max:850,
-        price:600,
-        off:"35% OFF",
-        rating: '★★★★★'
-    } ,  
-    {
-        image_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/c/0/c084a91NYKAB00000507_1.jpg",
-        desc:"Nykaa SKINRX 5% Niacinamide Spot Correct Day Moisturiser",
-        max:399,
-        price:299,
-        off:"25% OFF",
-        rating: '★★★★★'
-    } , 
-    {
-        image_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/7/8/783320971563_2_.jpg",
-        desc:"BVLGARI Man In Black Eau De Parfum",
-        max:8999,
-        price:6500,
-        off:"30% OFF",
-        rating: '★★★★★'
-    } 
-    
+    }   
+   
 ] 
 
+  
 
-showMenSection()
-function showMenSection(){
-    
-    mensProducts.map((elem)=>{
+showMenSection(mensProducts)
+function showMenSection(data){
+    document.getElementById("product-div").textContent =""
+    data.map((elem)=>{
         var div = document.createElement("div")
         div.setAttribute("id", "box") 
 
-        var image = document.createElement("image_url")
+        var image = document.createElement("img")
         image.setAttribute("src", elem.image_url)
+        image.setAttribute("id", "images")
 
-        var desc = document.createElement("h3")
+        var desc = document.createElement("p")
         desc.textContent = elem.desc
-        desc.setAttribute("id", "h3")
+        desc.setAttribute("id", "desc")
 
         var priceDiv = document.createElement("div")
         priceDiv.setAttribute("id", "priceDiv")
+
+        var price = document.createElement("p")
+        price.textContent = "MRP:₹" + elem.price
+        price.setAttribute("id", "price")
+
+        var off = document.createElement("p")
+        off.textContent = elem.off 
+
+        priceDiv.append(price, off)
+
+        var rating = document.createElement("p")
+        rating.textContent = elem.rating
+        rating.setAttribute("id", "rating")
+       
+        var btnDiv = document.createElement("div")
+        btnDiv.setAttribute("id", "btnDiv")
+
+        var button = document.createElement("button")
+        button.textContent  = "Add to cart"
+        button.setAttribute("id", "button")
+        button.addEventListener("click", function(){
+            setTocart(elem)
+        })
+
+        var icon = document.createElement("i")
+        icon.setAttribute("class", "fa-regular  fa-heart");
+
+        btnDiv.append(icon,button)
+
+       div.append(image, desc, priceDiv, rating, btnDiv)
+       
+       document.getElementById("product-div").append(div)
+
 
     })
 }
 
 
 
+  function sortByPrice() {
+        var value = document.getElementById("select-price").value;
+    
+        if (value === "htl") {
+        var sorted = mensProducts.sort((a, b) => {
+            return b.price - a.price;
+        })
+        console.log(sorted);
+        }
+    
+        if (value === "lth") {
+        var sorted = mensProducts.sort((a, b) => {
+            return a.price - b.price;
+        })
+        
+        }
+    
+      showMenSection(sorted);
+ 
+  }
+
+
+
+  function sortByNames() {
+    var value = document.getElementById("select-name").value;
+
+    if (value === "ascending") {
+     mensProducts.sort((a, b) => {
+        if (a.desc > b.desc) {
+          return 1;
+        }
+        if (a.desc < b.desc) {
+          return -1;
+        }
+        return 0;
+      })
+
+    } 
+    if (value === "descending") {
+      mensProducts.sort((a, b) => {
+        if (a.desc > b.desc) {
+          return -1;
+        }
+        if (a.desc < b.desc) {
+          return 1;
+        }
+        return 0;
+      })
+    } 
+    
+   showMenSection(mensProducts)
+
+  }
+ 
+
+  function filterbyDiscount(){
+    
+      var discount = document.getElementById("discount")
+      var filteredVal = mensProducts.filter((elem)=>{
+            if(discount === ""){
+                return true
+            }
+            else{
+                return discount === elem.off +""
+            }
+        })
+       showMenSection(filteredVal)
+
+  }
+
+
+
+
+
+  var cartData = JSON.parse(localStorage.getItem("cart-product")) || []
+  function setTocart(elem){
+     cartData.push(elem)
+     localStorage.setItem("cart-product", JSON.stringify(cartData))
+  }
+  
+//   export{ showMenSection }
+
+  
+  
+  
+  
+  
+  
 
 
 

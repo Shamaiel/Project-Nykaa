@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* font-family: sans-serif; */
+   
 }
 body{
     background-color: rgb(243,243,243);
@@ -22,26 +22,12 @@ body{
     grid-template-columns: repeat(3, 1fr);
     gap: 17px;
     margin-left: -10px ;
-    overflow: hidden;
 }
 
 #box{
     background-color: rgb(255,255,255);
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
    
-}
-
-
-h2{
-    text-align: center;
-    color:  rgb(234, 27, 196);
-}
-#h2d{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    margin-top: 100px;
-    margin-bottom: 18px;
 }
 
 #sideDiv{
@@ -61,6 +47,7 @@ h2{
     justify-content: center;
     background-color: rgb(255,255,255);
     margin-bottom: 8px;
+    
 
 }
 
@@ -150,6 +137,19 @@ p{
     margin-top: 4px;
 
    
+}
+
+
+h2{
+    text-align: center;
+    color:  rgb(234, 27, 196);
+}
+#h2d{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 18px;
 }
 
 
