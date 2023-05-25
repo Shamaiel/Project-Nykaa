@@ -64,37 +64,27 @@
 </body>
 </html>
 <script>
-    document.getElementById("button").addEventListener("click",check)
-    var detailarr=JSON.parse(localStorage.getItem("credentials"))||[]
-    function check(){
-        var detail=document.getElementById("number").value
-        if(present(detail)){
-            alert("Already signed up.")
-           
+   var loginarr=JSON.parse(localStorage.getItem("credentials"))||[]
+  document.getElementById("button").addEventListener("click",check)
+  var flag=0;
+  function check(){
+    var mobile=document.getElementById("number").value;
+   // console.log(mobile)
+    loginarr.map(function(ele){
+        console.log(ele.mobile)
+        if(mobile==ele.mobile ||mobile==ele.email){
+          alert("Welcome Back Nykaa User")
+          flag=1;
         }
-    
-        else{
-        var obj={
-            details:detail
-        }
-        detailarr.push(obj)
-        localStorage.setItem("credentials",JSON.stringify(detailarr))
-        signup()
+       
+    })
+    if(flag==0){
+    alert("Please sign up first")
+    signup()
     }
-    }
-    function present(detail){
-        console.log(detail)
-        for(var i=0;i<detailarr.length;i++){
-             if(detailarr[i].details===detail){
-                return true;
-             }
-        }
-        return false;
-    }
-
-  function signup(){
-    window.location.href = "signup.html";
   }
-   
+   function signup(){
+    window.location.href = "signup.html";
+   }
    
 </script>
