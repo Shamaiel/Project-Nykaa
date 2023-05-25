@@ -1,0 +1,68 @@
+body{
+    width: 80%;
+    margin: auto;
+}
+#nav{
+    display: flex;
+    border:0.5px solid rgba(189, 186, 186, 0.19) ;
+  
+    
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+#up1{
+    
+    margin: auto;
+}
+#up1{
+    display: flex;
+    gap: 0px 350px;
+}
+#up1 >div p:first-child{
+  font-size: 35px;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
+#up1>div p:nth-child(2){
+    margin-top: -30px;
+}
+#mid1{
+    font-size: 20px;
+    font-weight: bold; 
+   
+    margin: auto;
+}
+#mid2{
+    border:2px solid rgba(237, 18, 18, 0.19) ;
+    margin-top: -15px;
+   display: flex;
+   gap: 0px 50px;
+}
+
+#mid2>div:nth-child(1){
+    width: 30%;
+ 
+    border: 2px solid red;
+    background-color: rgb(199, 199, 234);
+}
+#mid2>div>div{
+    display: flex;
+    gap: 0px 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 10px;
+}
+#mid2>div>div:hover{
+    background-color: rgb(235, 241, 246);
+    cursor:pointer ;
+}
+#mid2>div>div>div p:nth-child(2){
+    margin-top: -15px;
+}
+#mid2>div>div>div img{
+    margin-top: 25px;
+    
+}
+
+
+
