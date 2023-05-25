@@ -192,6 +192,7 @@ function showMenSection(data){
 
         var off = document.createElement("p")
         off.textContent = elem.off 
+        console.log(elem.off)
 
         priceDiv.append(price, off)
 
@@ -281,13 +282,13 @@ function showMenSection(data){
 
   function filterbyDiscount(){
     
-      var discount = document.getElementById("discount")
+      var discount = document.getElementById("discount").value
       var filteredVal = mensProducts.filter((elem)=>{
             if(discount === ""){
                 return true
             }
             else{
-                return discount === elem.off +""
+                return discount === elem.off
             }
         })
        showMenSection(filteredVal)
@@ -302,9 +303,10 @@ function showMenSection(data){
   function setTocart(elem){
      cartData.push(elem)
      localStorage.setItem("cart-product", JSON.stringify(cartData))
+     window.location.href = "proDesc.html"
   }
   
-//   export{ showMenSection }
+  export{ showMenSection }
 
   
   

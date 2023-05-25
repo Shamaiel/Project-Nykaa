@@ -4,6 +4,7 @@
     box-sizing: border-box;
    
 }
+
 body{
     background-color: rgb(243,243,243);
 }
@@ -148,12 +149,13 @@ p{
     margin-top: 100px;
     margin-bottom: 18px;
 }
-
+    
 #rating{
   text-align: center;
   margin-bottom: 10px;
 
 }
+
 #price{
   margin-right: 12px;
   color: green;
@@ -172,6 +174,9 @@ p{
         display: block;
         margin-left: 77px;
     }
+    #sideDiv{
+        width: 60%;
+    }
 
 
 }
@@ -186,5 +191,11 @@ p{
         display: block;
         margin-left: 77px;
     }
+    #sideDiv{
+        width: 67%;
+    }
 }
+
+
+
 

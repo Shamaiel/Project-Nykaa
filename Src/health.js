@@ -173,7 +173,8 @@ let healthData = [
     }
   ]
 
-  
+
+
   displayHealthProducts(healthData)
   
   function displayHealthProducts(data){
@@ -228,7 +229,7 @@ let healthData = [
 
 
     })
-}
+} 
 
 
 //Sorting functions
@@ -286,6 +287,23 @@ if (value === "descending") {
 displayHealthProducts(healthData)
 
 }
+
+function filterbyDiscount(){
+    
+  var discount = document.getElementById("discount").value
+  var filteredVal = healthData.filter((elem)=>{
+        if(discount === ""){
+            return true
+        }
+        else{
+            return discount === elem.off
+        }
+    })
+    displayHealthProducts(filteredVal)
+
+}
+
+
 
 
 //Add to cart

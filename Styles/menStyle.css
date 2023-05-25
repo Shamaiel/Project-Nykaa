@@ -176,6 +176,9 @@ p{
         display: block;
         margin-left: 77px;
     }
+    #sideDiv{
+       width: 64%;
+    }
 
 
 }
@@ -190,5 +193,8 @@ p{
         display: block;
         margin-left: 77px;
     }
+    #sideDiv{
+        width: 68%;
+     }
 }
 

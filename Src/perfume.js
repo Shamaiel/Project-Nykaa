@@ -286,6 +286,8 @@ function sortByPrice() {
     
     }
 
+    
+
     displayPerfumes(perfumeData)
 
 }
@@ -318,10 +320,33 @@ if (value === "descending") {
     return 0;
   })
 } 
+if(value === ""){
+  return true
+}
 
 displayPerfumes(perfumeData)
 
 }
+
+
+function filterbyDiscount(){
+    
+  var discount = document.getElementById("discount").value
+  var filteredVal = perfumeData.filter((elem)=>{
+        if(discount === ""){
+            return true
+        }
+        else{
+            return discount === elem.off
+        }
+    })
+  displayPerfumes(filteredVal)
+
+}
+
+
+
+
 
 
 //Add to cart

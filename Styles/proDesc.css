@@ -1,0 +1,84 @@
+
+body{
+    background-color: rgb(243,243,243);
+}
+
+#mainDiv{
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    margin: 10% 8% 3% 16%;
+    height: 325px;
+    background-color: rgb(255,255,255);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+
+}
+
+#rightDiv{
+    margin-left: 3%;
+    border-left: 2px solid #cbc6c9;
+    width: 55%;
+    background-color: rgb(255,255,255);
+}
+
+#leftDiv{
+    border: 1 px solid blue;
+}
+
+#leftImage{
+    width: 100%;
+}
+#desc{
+    margin-left: 25px;
+    font-family: cursive;
+}
+
+.fa-regular{
+    font-weight: 400;
+    margin-left: 18px;
+    margin-top: 15px;
+    font-size: 22px;
+    color: rgb(234, 27, 196);
+}
+
+
+#rating{
+    margin-left: 25px;
+    margin-top: 25px;
+}
+#price{
+    margin-left: 25px;
+    margin-top: 54px;
+}
+#btnDiv{
+    margin-left: 25px;
+}
+#myInput{
+    width: 40%;
+    padding: 7px;
+    margin-left: 54px;
+    border: 1px solid #784d6a;
+
+}
+
+
+
+#button{
+    width: 30%;
+    padding: 8px;
+    background-color: rgb(232,0,113);
+    color: white;
+    border: none;
+    margin-top: 8%;
+    
+}
+
+#button:hover{
+    cursor: pointer;
+    border: 1px solid rgb(232,0,113);
+    background-color:  rgb(255,255,255);
+    color: black;
+}
+
+

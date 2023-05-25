@@ -176,6 +176,9 @@ h2{
         display: block;
         margin-left: 77px;
     }
+    #sideDiv{
+        width: 60%;
+    }
 
 
 }
@@ -189,6 +192,9 @@ h2{
     #container{
         display: block;
         margin-left: 77px;
+    }
+    #sideDiv{
+        width: 67%;
     }
 }
 
