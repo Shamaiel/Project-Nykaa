@@ -14,12 +14,25 @@
         <div class="logo">nykka</div>
         <div>items in cart: <span id="cart-size"></span></div>
     </div>
-    <div class="total"><p>Total Bill: <span id="totalprice"></span></p></div>
+    <div class="emptycart" id="emptycart">
+        
+    </div>
+    <div class="promo" id="promo">
+        <div class="input-group mb-3">
+            <input id='promocode' type="text" class="form-control" placeholder="Enter promo code" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button class="btn btn-outline-secondary" type="button" id="button-addon2">Apply</button>
+          </div>          
+    </div>    
     <div class="cart" id="cart">
+           
     </div>
-    <div class="bt">
-        <button type="button" class="btn btn-primary">Checkout</button>
-    </div>
+    <div class="bt" id="bt">
+        <div class="total">
+            <p>₹<span id="totalprice"></span></p>
+            <p>Grand Total</p>
+        </div>
+        <button type="button" class="btn btn-primary">Proceed <i class="bi bi-arrow-right"></i></button>
+    </div> 
 <script src="cart.js"></script>
 <script src="dummydata.js"></script>
 </body>

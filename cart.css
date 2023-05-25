@@ -11,60 +11,83 @@ body{
     font-size: 40px;
     display: flex;
     justify-content: space-between;
+} 
+.item{
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(0, 19, 37, 0.08);
+    border-radius: 8px;
+    padding: 10px;
 }
-.total{
+cart img{
+    width: 90px;
+    height: 90px;
+}
+.item>div{
+    display: flex;
+}
+.item>div:nth-child(1){
+    justify-content: space-between;
+}
+.item>div:nth-child(1)>div:nth-child(2){
+
+}
+.item>div:nth-child(3)>div:nth-child(1){
+    display: flex;
+    gap:10px;
+}
+.item>div:nth-child(3){
+    justify-content: space-between;
+}
+.total>p:nth-child(1){
     text-align: center;
-    font-size:40px;
+    font-size:20px;
+    font-weight: bold;
+}
+.total>p:nth-child(2){
+    text-align: center;
+    font-size:12px;
 }
 .cart{
-    width: 50%;
+    width: 25%;
     margin: auto;
     display: flex;
     flex-direction: column;
     gap:20px;
 }
-.item{
-    margin: auto;
-    display:flex;
-    border: 2px solid black;
-    width: 50%;
-    justify-content: space-between;
-   
+
+.bt{
+    width: 25%;
+    margin:auto;
+    display: flex;
+    align-items: center;
+    justify-content:  space-between;
 }
-.item>div:nth-child(2){
-    margin-top:20px;
+button{ 
+    font-size:40px;
+    text-align: center;
+    background-color: #E80071 !important;
+    color: white;
+}
+.bt>div:nth-child(1)>p:nth-child(2){
+    margin-top: -20px;
+}
+i:hover{
+    cursor: pointer;
+}
+.promo{
+    width:25%;
+    margin: auto;
+}
+.emptycart{
     display: flex;
     flex-direction: column;
-    gap: 20px;
-}
-.item>div:nth-child(2)>div:nth-child(2){
-    display: flex;
-    gap:30px;
-}
-img{
-    width:150px;
-    border-right: 1px solid black;
-    height:100%;
-    
-}
-.bi-x-lg{
-    color: red;
-    font-size:20px;
-}
-.bi-plus-lg{
-    color: red;
-
-}
-.bi-dash-lg{
-    color: green;
-}
-.bt{
-    display: flex;
     align-items: center;
     justify-content: center;
 }
-button{ 
-    width: 30%;
-    font-size:40px;
-    text-align: center;
+.emptycart>p:nth-child(2){
+    font-size: xx-large;
+    font-weight:600;
 }
