@@ -16,6 +16,7 @@
         display: flex;
         justify-content: center;
         background-color: rgb(243, 243, 243);
+        background-image: url('https://adn-static1.nykaa.com/media/wysiwyg/2018/WallofColors/shopbycolor.jpg');
 
     }
 
@@ -29,6 +30,7 @@
         font-size: 16px;
         box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
         border-radius: 10px 10px 0px 0px;
+       
 
     }
 
@@ -86,6 +88,8 @@
 
                 <input type="text" placeholder="Email" id="email">
 
+                <input type="text" placeholder="password" id="password">
+
                 <input type="submit" id="button">
             </form>
 
@@ -104,12 +108,14 @@
         var name = document.getElementById("name").value;
         var mobile = document.getElementById("mobile").value;
         var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
         console.log(name)
 
         var obj = {
             name: name,
             mobile: mobile,
-            email: email
+            email: email,
+            password:password
 
         }
         customerarray.push(obj)
