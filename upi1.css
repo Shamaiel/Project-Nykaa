@@ -1,0 +1,35 @@
+body {
+    margin: 130px;
+  }
+  #upr1 {
+    font-size: 20px;
+    font-weight: bold;
+ 
+  }
+  #midl1 {
+    font-size: 15px;
+  }
+  #midl1 > div:nth-child(2) {
+    display: flex;
+    margin-top: 30px;
+    margin-left: -110px;
+
+  }
+  #midl1 > div > div {
+    margin: 10px;
+  }
+ #midl2 p{
+    display: block;
+   
+ }
+  #upi {
+    padding: 5px 67px;
+    background-color: rgb(203, 203, 224);
+    margin-top: -10px;
+  }
+  #btn1 button {
+    margin-top: 20px;
+    padding: 10px 138px;
+    border-radius: 7px;
+    border: 0px;
+  }

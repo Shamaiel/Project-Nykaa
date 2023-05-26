@@ -6,7 +6,7 @@ body{
     display: flex;
     border:0.5px solid rgba(189, 186, 186, 0.19) ;
   
-    
+    margin-top: -117px;
     justify-content: space-around;
     font-size: 20px;
 }
@@ -34,7 +34,7 @@ body{
     margin: auto;
 }
 #mid2{
-    border:2px solid rgba(237, 18, 18, 0.19) ;
+   
     margin-top: -15px;
    display: flex;
    gap: 0px 50px;
@@ -43,7 +43,7 @@ body{
 #mid2>div:nth-child(1){
     width: 30%;
  
-    border: 2px solid red;
+    /* border: 2px solid red; */
     background-color: rgb(199, 199, 234);
 }
 #mid2>div>div{
@@ -64,5 +64,10 @@ body{
     
 }
 
-
+#payment-Box{
+    padding: 30px;
+}
+#other{
+    color: red;
+}
 

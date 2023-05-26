@@ -1,107 +1,90 @@
-body{
-    margin: 20px;
+body {
+  margin: 20px;
 }
-#upr1{
-    font-size: 20px;
-    font-weight: bold;
+#upr1 {
+  font-size: 20px;
+  font-weight: bold;
 }
-#midl1{
-    font-size: 15px;
+#midc1 > div {
+  padding: 0px 15px;
 }
-#midl1>div:nth-child(2){
-display: flex;
-
-
+#midc1 > div p {
+  display: inline;
+  margin-top: 0px;
 }
-#midl1>div>div{
-    margin: 10px;
+#number {
+  margin-top: 20px;
+  padding: 10px 60px 10px 5px;
+  background-color: rgb(203, 203, 235);
 }
-#midl1>div>div p{
-   margin-top: 0px;
+#cvv {
+  margin-top: 20px;
+  padding: 10px 60px 10px 5px;
+  background-color: rgb(203, 203, 235);
 }
-#upi{
-    padding: 5px 67px;
-    background-color: rgb(203, 203, 224);
-    margin-top: -10px;
+#checkbox {
+  margin-top: 20px;
 }
-#btn1 button{
-    margin-top: 20px;
-    padding: 5px 112px;
+#san2 {
+  color: rgb(21, 21, 216);
 }
-#midc1>div{
-    padding: 0px 15px;
+#midc1 button {
+  margin-top: 20px;
+  padding: 10px 80px;
 }
-#midc1>div p{
-    display: inline;
-    margin-top: 0px;
-  
+#selectcard {
+  padding: 5px 40px 5px 10px;
 }
-#number{
-    margin-top: 20px;
-    padding: 10px 60px 10px 5px;
-    background-color: rgb(203, 203, 235);
+#btn2 {
+  margin-top: 20px;
+  padding: 5px 44px;
 }
-#cvv{
-    margin-top: 20px;
-    padding: 10px 60px 10px 5px;
-    background-color: rgb(203, 203, 235); 
+#btn3 {
+  margin-top: 20px;
+  padding: 10px 83px;
 }
-#checkbox{
-    margin-top: 20px;
+#number1 {
+  margin-top: 20px;
+  padding: 10px 60px 10px 5px;
+  background-color: rgb(203, 203, 235);
 }
-#san2{
-    color: rgb(21, 21, 216);
-}
-#midc1 button{
-    margin-top: 20px;
-  padding: 5px 80px;  
-}
-#selectcard{
-padding: 5px 40px 5px 10px;
-}
-#btn2{
-    margin-top: 20px;
-    padding: 5px 44px;
-}
-#btn3{
-    margin-top: 20px;
-    padding: 5px 77px;
-}
-#number1{
-    margin-top: 20px;
-    padding: 10px 60px 10px 5px;
-    background-color: rgb(203, 203, 235);
-}
-#mildo{
+#mildo {
   display: flex;
 }
-#btn5{
-    margin-top: 20px;
-    padding: 5px 77px; 
+#btn5 {
+  margin-top: 20px;
+  padding: 10px 85px;
 }
-#number6{
-   
-    padding: 10px 60px 10px 5px;
-    background-color: rgb(203, 203, 235);  
+#number6 {
+  padding: 10px 60px 10px 5px;
+  background-color: rgb(203, 203, 235);
 }
-#btn6{
-    margin-top: 20px;
-    padding: 5px 77px;
+#btn6 {
+  margin-top: 20px;
+  padding: 10px 108px;
 }
-#number7{
-    padding: 10px 67px 10px 5px;
-    background-color: rgb(203, 203, 235);  
+#number7 {
+  padding: 10px 100px 10px 5px;
+  background-color: rgb(203, 203, 235);
 }
-#num7{
-    margin-top: 20px;
+#num7 {
+  margin-top: 20px;
 }
-#pin{
-    padding: 4px;
+#pin {
+  padding: 4px;
 }
-#btn7{
-    padding: 4px;
+#btn7 {
+  padding: 5px 17px;
+  margin: 8px;
 }
-#btn8{
-    margin-top: 10px;
-    padding: 5px 77px;   
+#btn8 {
+  margin-top: 10px;
+  padding: 10px 146px;
+}
+button{
+  background-color: red;
+  margin-top: 20px;
+  padding: 10px 138px;
+  border-radius: 7px;
+  border: 0px;
 }
