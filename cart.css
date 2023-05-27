@@ -1,16 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 *{
     margin: 0;
     padding: 0;
 }
 body{
-    font-family:'Poppins', serif;
+    font-family: 'Inter', sans-serif;
 }
 .navbar{
-    background-color: pink;
+    background-color:white;
     font-size: 40px;
-    display: flex;
-    justify-content: space-between;
+    border-bottom: 1px solid black;
 } 
 .item{
     display: flex;
@@ -21,7 +20,7 @@ body{
     border-radius: 8px;
     padding: 10px;
 }
-cart img{
+img{
     width: 90px;
     height: 90px;
 }
@@ -51,16 +50,28 @@ cart img{
     font-size:12px;
 }
 .cart{
-    width: 25%;
-    margin: auto;
+    width:30%;
+    margin-left: 10%;
     display: flex;
     flex-direction: column;
     gap:20px;
 }
-
+.cart-layout{
+    display: flex;
+    justify-content: space-around;
+}
+.receipt>div{
+    display: flex;
+    gap:20px;
+}
+#cart-size,#itemtext{
+    font-weight:200;
+    font-size:25px;
+    margin-left:4px;
+}
 .bt{
-    width: 25%;
-    margin:auto;
+    width: 30%;
+    margin-left:22%;                                     
     display: flex;
     align-items: center;
     justify-content:  space-between;
@@ -78,8 +89,8 @@ i:hover{
     cursor: pointer;
 }
 .promo{
-    width:25%;
-    margin: auto;
+    width:30%;
+    margin-left: 22%;
 }
 .emptycart{
     display: flex;

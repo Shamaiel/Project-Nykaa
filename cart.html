@@ -11,8 +11,7 @@
 </head>
 <body>
     <div class="navbar">
-        <div class="logo">nykka</div>
-        <div>items in cart: <span id="cart-size"></span></div>
+        <div class="logo"><i class="bi bi-arrow-left"></i>Bag<span id="cart-size"></span><span id="itemtext">items</span></div>
     </div>
     <div class="emptycart" id="emptycart">
         
@@ -23,8 +22,27 @@
             <button class="btn btn-outline-secondary" type="button" id="button-addon2">Apply</button>
           </div>          
     </div>    
-    <div class="cart" id="cart">
-           
+    <div class="cart-layout">
+        <div class="cart" id="cart">
+        
+        </div>
+        <div class="receipt">
+            <p>Price Details</p>
+            <div>
+                <div>
+                    <p>Bag MRP</p>
+                    <p>Bag Discount</p>
+                    <p>Shipping</p>
+                    <p>You Pay</p>
+                </div>
+                <div>
+                    <p>₹<span id="totalprice"></span></p>
+                    <p>30%</p>
+                    <p>Free</p>
+                    <p>total-discount</p>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="bt" id="bt">
         <div class="total">
