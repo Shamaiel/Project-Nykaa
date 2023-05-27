@@ -22,35 +22,34 @@
             <button class="btn btn-outline-secondary" type="button" id="button-addon2">Apply</button>
           </div>          
     </div>    
-    <div class="cart-layout">
+    <div class="cart-layout" id="cart-layout">
         <div class="cart" id="cart">
         
         </div>
         <div class="receipt">
-            <p>Price Details</p>
+            <p><b>Price Details</b></p>
             <div>
                 <div>
                     <p>Bag MRP</p>
                     <p>Bag Discount</p>
                     <p>Shipping</p>
-                    <p>You Pay</p>
                 </div>
                 <div>
                     <p>₹<span id="totalprice"></span></p>
-                    <p>30%</p>
-                    <p>Free</p>
-                    <p>total-discount</p>
+                    <p id="discountStatus">None</p>
+                    <p>₹<span id="cutprice">70</span> Free</p>
                 </div>
             </div>
+            <div class="bt" id="bt">
+                <div class="total">
+                    <p>₹<span id="grandtotalprice"></span></p>
+                    <p>Grand Total</p>
+                </div>
+                <button type="button" class="btn btn-primary">Proceed <i class="bi bi-arrow-right"></i></button>
+            </div> 
         </div>
     </div>
-    <div class="bt" id="bt">
-        <div class="total">
-            <p>₹<span id="totalprice"></span></p>
-            <p>Grand Total</p>
-        </div>
-        <button type="button" class="btn btn-primary">Proceed <i class="bi bi-arrow-right"></i></button>
-    </div> 
+    
 <script src="cart.js"></script>
 <script src="dummydata.js"></script>
 </body>

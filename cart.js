@@ -3,7 +3,8 @@ var cart=document.querySelector('#cart');
 var promo=document.querySelector('#promo');
 var bt=document.querySelector('#bt');
 var emptycart=document.querySelector('#emptycart');
-var discountapplied=false;
+var grandtotalprice=document.querySelector('#grandtotalprice');
+var cartlayout=document.querySelector('#cart-layout');
 document.querySelector('#button-addon2').addEventListener('click',function(){
     var discount=document.querySelector('#promocode').value;
     applydiscount(discount);
@@ -20,15 +21,15 @@ function generateCartItems(){
         },0);
         document.querySelector('#totalprice').textContent=total;
         return(cart.innerHTML=cartitems.map(function(data){  
-            let{id,name,price,desc,img,item}=data;
+            let{desc,id,image_url,item,max,off,price}=data;
             return`
                 <div class="item">
                 <div>
                     <div class="img">
-                        <img src="${img}" alt="">
+                        <img src="${image_url}" alt="">
                     </div>
                     <div class="name">
-                        <p>${name}</p>
+                        <p>${desc}</p>
                     </div>
                     <div class="delete">
                         <i class="bi bi-trash" onclick='remove(${id})'></i>
@@ -50,6 +51,7 @@ function generateCartItems(){
             `
         }).join(" "));
     }else{
+        cartlayout.innerHTML="";
         cart.innerHTML="";
         promo.innerHTML="";
         bt.innerHTML="";
@@ -62,6 +64,7 @@ function generateCartItems(){
     
 }
 function increase(id){
+    console.log(id);
     var target=cartitems.find(function(data){
         return data.id===id.id;
     })
@@ -111,8 +114,9 @@ function remove(id){
 function applydiscount(discount){
     if(discount==='masai30'){
         discountapplied=true;
-        total-=total*0.3;
         document.querySelector('#totalprice').textContent=total;
+        document.querySelector('#discountStatus').textContent=total*0.3
+        grandtotalprice.textContent=total-total*0.3;
     }else{
         alert('Promo code not found')
     }
