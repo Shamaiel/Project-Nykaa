@@ -20,6 +20,7 @@ function generateCartItems(){
             return acc+obj.price*obj.item;
         },0);
         document.querySelector('#totalprice').textContent=total;
+        grandtotalprice.textContent=total;
         return(cart.innerHTML=cartitems.map(function(data){  
             let{desc,id,image_url,item,max,off,price}=data;
             return`
@@ -98,6 +99,7 @@ function calculate(){
     },0)
     document.querySelector('#cart-size').textContent=totalqty;
     document.querySelector('#totalprice').textContent=total;
+    grandtotalprice.textContent=total;
     generateCartItems();
 }
 function remove(id){

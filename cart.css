@@ -50,8 +50,7 @@ img{
     font-size:12px;
 }
 .cart{
-    width:30%;
-    margin-left: 10%;
+    width:50%;
     display: flex;
     flex-direction: column;
     gap:20px;
@@ -62,12 +61,12 @@ img{
 }
 .receipt{
     height:50%;
-    transform: scale(1.2);
     border-style: solid;
     border-width: 1px;
     border-color: rgba(0, 19, 37, 0.08);
     border-radius: 8px;
     padding: 10px;
+  
 }
 .receipt>div{
     display: flex;
@@ -98,8 +97,9 @@ i:hover{
     cursor: pointer;
 }
 .promo{
-    width:30%;
-    margin-left: 22%;
+    width:50%;
+    margin: auto;
+    
 }
 .emptycart{
     display: flex;
@@ -117,5 +117,11 @@ i:hover{
 @media only screen and (max-width:640px){
     .cart-layout{
         flex-direction: column;
+    }
+    .cart{
+        width: 100%;
+    }
+    .receipt{
+        width: 100%;
     }
 }
