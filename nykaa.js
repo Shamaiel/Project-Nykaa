@@ -18,14 +18,14 @@ function showcreditCard(){
               <span><img src="https://adn-static1.nykaa.com/media/wysiwyg/Payments/WeAccept/Rupay.svg" alt="rupay"></span>
               <span><img src="https://adn-static1.nykaa.com/media/wysiwyg/Payments/WeAccept/AMEX.svg" alt=""></span><br>
   
-              <input type="number" name="" id="number"placeholder="Enter Card Number"><br>
-              <input type="password" name="" id="cvv"placeholder="CVV"><br>
+              <input type="number" name="" id="number"placeholder="Enter Card Number"required><br>
+              <input type="password" name="" id="cvv"placeholder="CVV"required><br>
               <input type="checkbox" name="" id="checkbox">Save this card securely for future
   <span id="san2">Know More </span><br>
-              <button>
+              <button onclick="creditid()">
     Verify & Pay
               </button>
-  
+
           </div>
       </div>
   `
@@ -66,7 +66,7 @@ function upishow(){
    <p>2. Enter UPI/VPA Id</p>
    <input type="text" name="" id="upi" placeholder="Enter UPI ID">
 </div>
-<div id="btn1">
+<div id="btn1" onclick="pay()">
 <button> Pay</button>
 </div>
    `
@@ -98,7 +98,7 @@ function NetBankingData(){
             <option value="" id="other">Other Bank</option>
     </select>
 </div>
-<button id="btn2">
+<button id="btn2"  onclick="NetBank()">
     Pay using Net-Banking
 </button>
     
@@ -117,7 +117,7 @@ function Payletter(){
 <div id="midpl">
 <input type="number" name="" id="number1"placeholder="Enter Your number">
 </div>
-<button id="btn3">
+<button id="btn3"onclick="PayLetter()">
 check & Pay
 </button>
     `
@@ -138,7 +138,7 @@ paymentBox5.innerHTML=`
 </span>
 <p>Pay through Paytm wallet, Simpl or CRED Pay and get exciting cashbacks upto Rs. 500</p>
 </div>
-<button id="btn5">
+<button id="btn5" onclick="Cashondelivery()">
 Place Order
 </button>
 `
@@ -157,7 +157,7 @@ function PaytmWallet1(){
     <div id="midw">
         <input type="number" name="" id="number6"placeholder="Enter Your Number">
     </div>
-    <button id="btn6">
+    <button id="btn6"onclick="PayWallet()">
        Link
     </button>
     
@@ -177,7 +177,7 @@ function GiftCard1(){
 </div>
 <div id="num7">
     <input type="number" name="" id="pin"placeholder="PIN">
-    <button id="btn7">Proceed</button>
+    <button id="btn7"onclick="GiftCard()">Proceed</button>
 </div>
     
     `
@@ -194,6 +194,8 @@ function EMI1(){
 <div>
     <p> * check the EMI List & Shopping more than 4000</p>
 </div>
-<button id="btn8">proceed</button>
+<button id="btn8" onclick="emi()">proceed</button>
     `
 }
+
+

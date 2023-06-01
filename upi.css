@@ -37,7 +37,7 @@ body {
 }
 #btn2 {
   margin-top: 20px;
-  padding: 5px 44px;
+  padding: 10px 44px;
 }
 #btn3 {
   margin-top: 20px;
@@ -82,9 +82,12 @@ body {
   padding: 10px 146px;
 }
 button{
-  background-color: red;
+  background-color: rgb(239, 8, 93);
   margin-top: 20px;
   padding: 10px 138px;
   border-radius: 7px;
   border: 0px;
+}
+.paymentimg{
+  margin-left: 19%;
 }
