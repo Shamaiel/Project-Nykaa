@@ -84,16 +84,16 @@ function NetBankingData(){
 <div id="midn1">
     <select name="" id="selectcard">
         <option value="">Select the card</option>
-        <option value="">
+        <option value=" AXIS">
             AXIS</option>
-            <option value="">
+            <option value=" HDFC">
                 HDFC</option>
-            <option value="">
+            <option value="ICICI">
                 ICICI</option>
-            <option value="">KOTAK</option>
-            <option value="">
+            <option value="KOTAK">KOTAK</option>
+            <option value="SBI">
                 SBI</option>
-            <option value="">
+            <option value="YES Bank">
                 YES</option>
             <option value="" id="other">Other Bank</option>
     </select>

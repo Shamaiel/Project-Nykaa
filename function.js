@@ -45,25 +45,133 @@ function creditid(){
  function pay(){
   
     var upi=document.getElementById("upi").value;
+    var body=document.querySelector("body");
+    var div=document.createElement("div");
+    body.innerHTML=``;
+    body.innerHTML=new Date();
      
  }
 
 function NetBank(){
-    console.log("manshi")
+    var card=document.getElementById("selectcard").value;
+   console.log(card);
+   var newvalue=document.getElementById("payment-Box");
+   var div=document.createElement("div")
+   div.setAttribute("class","netbankstyle")
+  var div1=document.createElement("div");
+  var h3=document.createElement("h3");
+  h3.textContent="Pay through "+card+ " Bank NetBanking";
+  div1.append(h3);
+
+  div.append(div1);
+
+  var body=document.querySelector("body");
+  body.innerHTML=``;
+
+  body.append(div1);
+  body.innerHTML=`
+  <div class="netbankstyle" style=>
+  <div>
+      <h4>Login to NetBanking</h4>
+      Customer ID/ User ID:<input type="text" id="text">
+      <p id="color">Forgot Customer ID</p>
+      <button id="netbank" onclick="continue1()">
+          CONTINUE
+      </button>
+
+  </div>
+  <div>
+      <p>Dear Customer,</p>
+      <p>Welcome to the new login page of HDFC Bank NetBanking.
+          Its lighter look and feel is designed to give you the best possible user experience. Please continue to
+          login using your customer ID and password.</p>
+  </div>
+</div>
+`;
+  
 
 }
+function continue1(){
+    console.log("jaan");
+    
+    var body=document.querySelector("body");
+    var image=document.createElement("img");
+    image.setAttribute("src","https://momentumacademy.net/wp-content/uploads/2020/05/Paymentsuccessful21.png");
+    image.setAttribute("Alt","sucessfull image");
+    var div=document.createElement("div");
+    div.setAttribute("class","paymentimg")
+    div.append(image);
+   body.innerHTML=``;
+   
+   body.append(div);
+       
+       }
+
 
 function PayLetter(){
 
-    console.log("jaan")
+    var body=document.querySelector("#payment-Box");
+var num=document.getElementById("number1").value;
+console.log("sanjeev");
+if(num.length==10){
+    body.innerHTML=`
+    <div id="payletter">
+       <div>
+        <img src="https://adn-static1.nykaa.com/media/wysiwyg/Payments/Zest_Simpl/Simpl.svg" alt="payletter">
+       </div>
+       <div>
+        <h4>
+            SIMPLE
+        </h4>
+        <P>
+            You are not eligible for this payment option
+        </P>
+       </div>
+    </div>
+    `;
+
+}
+else{
+    alert("Enter Correct Number");
+}
+
+  
 }
 
 function Cashondelivery(){
-    console.log("kushwaha")
+    var body=document.querySelector("#payment-Box");
+    var button=document.getElementById("btn5").textContent="Order Placed";
+   
 } 
 
 function PayWallet(){
-    console.log("kush")
+    console.log("kush");
+    var body=document.querySelector("#payment-Box");
+var num=document.getElementById("number6").value;
+console.log("sanjeev");
+if(num.length==10){
+    body.innerHTML=`
+    <div id="payletter">
+       <div>
+        <img src="https://adn-static1.nykaa.com/media/wysiwyg/Payments/Zest_Simpl/Simpl.svg" alt="payletter">
+       </div>
+       <div>
+        <h4>
+            SIMPLE
+        </h4>
+        <P>
+            You are not eligible for this payment option
+        </P>
+       </div>
+    </div>
+    `;
+
+}
+else{
+    alert("Enter Correct Number");
+}
+ 
+
 }
 
 function GiftCard(){
@@ -72,4 +180,27 @@ function GiftCard(){
 
 function emi(){
     console.log("waha")
+    var body=document.querySelector("#payment-Box");
+   
+    console.log("sanjeev");
+  
+        body.innerHTML=`
+        <div id="payletter">
+           <div>
+            <img src="https://adn-static1.nykaa.com/media/wysiwyg/Payments/alert.svg" alt="payletter">
+           </div>
+           <div>
+            <h4>
+                SIMPLE
+            </h4>
+            <P>
+               
+EMI option is available only on orders above Rs 4000.
+            </P>
+           </div>
+        </div>
+        `;
+    
+   
+    
 }
