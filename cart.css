@@ -6,10 +6,12 @@
 body{
     font-family: 'Inter', sans-serif;
 }
-.navbar{
+div.navbar{
     background-color:white;
     font-size: 40px;
     border-bottom: 1px solid black;
+    position: sticky;
+    top: 0;
 } 
 .item{
     display: flex;
@@ -29,9 +31,6 @@ img{
 }
 .item>div:nth-child(1){
     justify-content: space-between;
-}
-.item>div:nth-child(1)>div:nth-child(2){
-
 }
 .item>div:nth-child(3)>div:nth-child(1){
     display: flex;
@@ -98,9 +97,10 @@ i:hover{
 }
 .promo{
     width:50%;
-    margin: auto;
-    
+    margin:auto;
+    padding: 10px;   
 }
+
 .emptycart{
     display: flex;
     flex-direction: column;
@@ -115,13 +115,25 @@ i:hover{
     text-decoration: line-through;
 }
 @media only screen and (max-width:640px){
+    .promo{
+        width: 100%;
+    }
     .cart-layout{
         flex-direction: column;
     }
     .cart{
         width: 100%;
     }
+    .cart>.item{
+        margin-left:10px;
+        margin-right: 10px;
+    }
     .receipt{
         width: 100%;
+        margin-left:10px;
+        margin-right: 10px;
+    }
+    .receipt>div:first-of-type{
+        justify-content: space-between;
     }
 }
