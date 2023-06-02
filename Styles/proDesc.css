@@ -1,0 +1,119 @@
+
+body{
+    background-color: rgb(243,243,243);
+    /* font-family: sans-serif; */
+}
+
+#mainDiv{
+    display: flex;
+    width: 69%;
+    justify-content: center;
+    margin: 10% 8% 3% 16%;
+    height: 333px;
+    background-color: rgb(255,255,255);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+
+}
+
+#rightDiv{
+    margin-left: 3%;
+    border-left: 2px solid #cbc6c9;
+    width: 55%;
+    background-color: rgb(255,255,255);
+}
+
+#leftDiv{
+    border: 1 px solid blue;
+}
+
+#leftImage{
+    width: 100%;
+}
+#desc{
+    margin-left: 25px;
+    font-family: cursive;
+    width: 225px;
+}
+
+.fa-regular{
+    font-weight: 400;
+    margin-left: 18px;
+    margin-top: 15px;
+    font-size: 22px;
+    color: rgb(234, 27, 196);
+}
+
+
+#rating{
+    margin-left: 25px;
+    margin-top: 25px;
+}
+#price{
+    margin-left: 25px;
+    margin-top: 34px;
+    color : rgb(0, 180, 0)
+}
+#btnDiv{
+    margin-left: 25px;
+}
+#myInput{
+    width: 40%;
+    padding: 8px;
+    margin-left: 54px;
+    border: 1px solid #784d6a;
+
+}
+
+
+
+#button{
+    width: 36%;
+    padding: 8px;
+    background-color: rgb(232,0,113);
+    color: white;
+    border: none;
+    margin-top: 8%;
+    height: 36px;
+    
+}
+
+#button:hover{
+    cursor: pointer;
+    border: 1px solid rgb(232,0,113);
+    background-color:  rgb(255,255,255);
+    color: black;
+}
+
+#rLDivContainer{
+    display: flex;
+   
+}
+#image{
+        width: 34px;
+        height: 37px;
+}
+#ptag{
+   font-size: 15px;
+   font-style: sans-serif;
+}
+#p2tag{
+    font-size: 15px;
+ }
+
+#imgPDiv{
+    display: flex;
+}
+#imgPDiv2{
+    display: flex;
+    margin-left: 18px;
+}
+#rlContainer{
+    display: flex;
+    width: 110%;
+    background-color: rgb(243,243,243);
+    margin-top: 40px;
+    border-top: 1px solid  #cbc6c9;
+}
+
+

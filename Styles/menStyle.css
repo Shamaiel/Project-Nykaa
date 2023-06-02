@@ -1,0 +1,201 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* font-family: sans-serif; */
+}
+body{
+    background-color: rgb(243,243,243);
+}
+
+
+#container{
+    display: flex;
+    width: 100%;
+    margin-bottom: 6%;
+}
+
+#product-div{
+    display: grid;
+    width: 65%;
+    margin: auto;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 17px;
+    margin-left: -10px ;
+    overflow: hidden;
+}
+
+#box{
+    background-color: rgb(255,255,255);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+   
+}
+
+
+h2{
+    text-align: center;
+    color:  rgb(234, 27, 196);
+}
+#h2d{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 18px;
+}
+
+#sideDiv{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin: 0 3%;
+}
+#desc{
+    font-weight: 300;
+    margin: 0 4px;
+    height: 25px;
+}
+
+#priceDiv{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255,255,255);
+    margin-bottom: 8px;
+    margin-top: 23px;
+
+}
+
+#select-price{
+  width: 92%;
+  padding: 8px;
+  font-size: 16px;
+  border: none;
+  border-radius: 2px;
+  background-color: rgb(255,255,255);
+  color: #333;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+p{
+    background-color: rgb(255,255,255); 
+}
+
+#select-name{
+    width:  92%;
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+    border-radius: 2px;
+    background-color: rgb(255,255,255);
+    color: #333;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin: 10px 0;
+}
+
+#discount{
+    width:  92%;
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+    border-radius: 2px;
+    background-color: rgb(255,255,255);
+    color: #333;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin: 10px 0;
+}
+#brand{
+    width:  92%;
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+    border-radius: 2px;
+    background-color: rgb(255,255,255);
+    color: #333;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin: 10px 0;
+}
+
+#desc{
+ text-align: center;
+ margin-bottom: 12px;
+
+}
+
+
+#btnDiv{
+    display: flex;
+     width: 100%;
+     border-top: 1px solid rgb(205, 205, 205) ;
+}
+
+#button{
+    width: 70%;
+    padding: 10px;
+    background-color: rgb(232,0,113);
+    color: white;
+    border: none;
+     margin-left: 35px;
+}
+
+#button:hover{
+    cursor: pointer;
+    border: 1px solid rgb(232,0,113);
+    background-color:  rgb(255,255,255);
+    color: black;
+}
+
+.fa-regular{
+    color: rgb(234, 27, 196);
+    background-color: rgb(255,255,255);
+    font-size: 26px;
+    margin-left: 20px;
+    margin-top: 4px;
+
+   
+}
+
+
+#rating{
+  text-align: center;
+  margin-bottom: 10px;
+
+}
+#price{
+  margin-right: 12px;
+  color: green;
+
+}
+
+
+
+@media only screen and (max-width:500px){
+    #product-div{
+       display: flex;
+       flex-direction: column;
+    }
+
+    #container{
+        display: block;
+        margin-left: 77px;
+    }
+    #sideDiv{
+       width: 64%;
+    }
+
+
+}
+
+
+@media only screen and (max-width:800px){
+    #product-div{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #container{
+        display: block;
+        margin-left: 77px;
+    }
+    #sideDiv{
+        width: 68%;
+     }
+}
+
