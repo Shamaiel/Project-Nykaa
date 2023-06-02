@@ -57,7 +57,7 @@ function generateCartItems(){
         promo.innerHTML="";
         bt.innerHTML="";
         emptycart.innerHTML=
-            `<img src="cartimages/empty-cart-4816550-4004141.png" alt="">
+            `<img src="images/empty-cart-4816550-4004141.png" alt="">
             <p>Your Shopping Bag is empty</p>
             <p>This feels too light,Go on, add all your favourites</p>
             <button type="button" class="btn btn-primary">Start Shopping</button>`
