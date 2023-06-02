@@ -1,0 +1,84 @@
+#parent{
+    display: flex;
+   
+    justify-content: center;
+    background-color: rgb(243,243,243);
+   background-image: url('https://adn-static1.nykaa.com/media/wysiwyg/2018/WallofColors/shopbycolor.jpg');
+   
+}
+#parent>div{
+    width: 27%;
+    margin-top: 60px;
+   border: 1px solid gainsboro;
+   background-color:rgb(241, 232, 240) ;
+    text-align: center;
+    justify-content: center;
+   font-size: 16px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-radius: 20px 20px 0px 0px;
+   
+}
+#number{
+    display: flex;
+    width: 80%;
+    height: 40px;
+  
+ text-align: center;
+ margin-top: 30px;
+ margin-left: 33px;
+ background-color: rgb(243,243,243);
+ border: 1px solid red;
+
+}
+#button{
+    width: 75%;
+    height: 50px;
+    margin-top: 50px;
+    color: white;
+    font-size: 16px;
+    margin-bottom: 100px;
+   background-color: rgb(252,39,121);
+   border: none;
+   border-radius: 5px 5px 5px 5px;
+}
+#number2{
+    display: flex;
+    width: 80%;
+    height: 40px;
+  
+ text-align: center;
+ margin-left: 33px;
+ margin-top: 20px;
+ background-color: rgb(243,243,243);
+ border: 1px solid red;
+}
+i {
+    font-size: 30px;
+    margin-bottom: 100px;
+}
+body{
+   font-family: 'Trebuchet MS', sans-serif;
+}
+
+@media only screen and (max-width: 768px) {
+    #parent > div {
+        width: 70%;
+    }
+    
+    #number,
+    #number2 {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #parent > div {
+        width: 90%;
+    }
+    
+    #number,
+    #number2 {
+        width: 100%;
+    }
+}
+
