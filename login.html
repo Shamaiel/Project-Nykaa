@@ -6,79 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/f2bb2ac3bf.js" crossorigin="anonymous"></script>
     <title>Login Page</title>
-</head>
-<style>
+    <link rel="stylesheet" type="text/css" href="login.css">
    
-    #parent{
-        display: flex;
-       
-        justify-content: center;
-        background-color: rgb(243,243,243);
-       background-image: url('https://adn-static1.nykaa.com/media/wysiwyg/2018/WallofColors/shopbycolor.jpg');
-       
-    }
-    #parent>div{
-        width: 27%;
-        margin-top: 60px;
-       border: 1px solid gainsboro;
-       background-color:rgb(241, 232, 240) ;
-        text-align: center;
-        justify-content: center;
-       font-size: 16px;
-        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-        border-radius: 20px 20px 0px 0px;
-       
-    }
-    #number{
-        display: flex;
-        width: 80%;
-        height: 40px;
-      
-     text-align: center;
-     margin-top: 30px;
-     margin-left: 33px;
-     background-color: rgb(243,243,243);
-     border: 1px solid red;
-    
-    }
-    #button{
-        width: 75%;
-        height: 50px;
-        margin-top: 50px;
-        color: white;
-        font-size: 16px;
-        margin-bottom: 100px;
-       background-color: rgb(252,39,121);
-       border: none;
-       border-radius: 5px 5px 5px 5px;
-    }
-    #number2{
-        display: flex;
-        width: 80%;
-        height: 40px;
-      
-     text-align: center;
-     margin-left: 33px;
-     margin-top: 20px;
-     background-color: rgb(243,243,243);
-     border: 1px solid red;
-    }
-    i {
-        font-size: 30px;
-        margin-bottom: 100px;
-    }
-    body{
-       font-family: 'Trebuchet MS', sans-serif;
-    }
-</style>
+</head>
+
 <body>
  <div id="parent">
     <div>
         <h2>LOGIN/REGISTER</h2>
         <hr>
-        <input placeholder="Enter Email Id or Phone Number" id="number">
-        <input placeholder="Password" id="number2">
-        <button id="button">PROCEED</button>
+        <form>
+        <input type="text" placeholder="Enter Email Id or Phone Number" id="number">
+        <input type="text" Password" id="number2">
+        <input type="submit" id="button">
+        </form>
         <p>or signup using </p>
         <i class="fa-brands fa-google fa-bounce" ></i>
         <i class="fa-brands fa-facebook fa-bounce" ></i>
@@ -86,32 +27,6 @@
       
     </div>
  </div>
-
+ <script src="login.js"></script>
 </body>
 </html>
-<script>
-   var loginarr=JSON.parse(localStorage.getItem("credentials"))||[]
-  document.getElementById("button").addEventListener("click",check)
-  var flag=0;
-  function check(){
-    var mobile=document.getElementById("number").value;
-    var password=document.getElementById("number2").value;
-   // console.log(mobile)
-    loginarr.map(function(ele){
-        
-        if((mobile===ele.mobile ||mobile===ele.email) && (password===ele.password)){
-          alert("Welcome Back Nykaa User")
-          flag=1;
-        }
-       
-    })
-    if(flag==0){
-    alert("Please sign up first")
-    signup()
-    }
-  }
-   function signup(){
-    window.location.href = "signup.html";
-   }
-   
-</script>
