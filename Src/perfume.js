@@ -218,10 +218,21 @@ let perfumeData = [
     data.map((elem)=>{
         var div = document.createElement("div")
         div.setAttribute("id", "box") 
+       
+        var anchor = document.createElement("a")
+        anchor.setAttribute("id", "anchor")
+
+        anchor.setAttribute("href", "proDesc.html")
+        anchor.setAttribute("target", "_blank")
 
         var image = document.createElement("img")
         image.setAttribute("src", elem.image_url)
         image.setAttribute("id", "images")
+
+        anchor.append(image)
+        image.addEventListener("click",function(){
+          gotoProDesc(elem)
+      })
 
         var desc = document.createElement("p")
         desc.textContent = elem.desc
@@ -258,7 +269,7 @@ let perfumeData = [
 
         btnDiv.append(icon,button)
 
-       div.append(image, desc, priceDiv, rating, btnDiv)
+       div.append(anchor, desc, priceDiv, rating, btnDiv)
        
        document.getElementById("product-div").append(div)
 
@@ -345,14 +356,17 @@ function filterbyDiscount(){
 }
 
 
-
-
-
-
 //Add to cart
 
 var cartData = JSON.parse(localStorage.getItem("cart-Data")) || []
 function setTocart(elem){
    cartData.push(elem)
    localStorage.setItem("cart-product", JSON.stringify(cartData))
+}
+
+
+//Prodct desc
+
+function  gotoProDesc(elem){
+  localStorage.setItem("desc", JSON.stringify(elem))
 }

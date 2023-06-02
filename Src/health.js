@@ -10,7 +10,7 @@ let healthData = [
     },
     {
       image_url: 'https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/f/1/f1b8f8b8906067023216.jpg',
-      desc: 'MuscleBlaze Whey Gold Whey Protein Isolate - Rich Milk Chocolate',
+      desc: 'MuscleBlaze Whey Gold Whey Protein Isolate - Rich Milk',
       rating: '★★★★★',
       price: 923,
       bestseller: 'BESTSELLER',
@@ -28,7 +28,7 @@ let healthData = [
     },
     {
       image_url: 'https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/7/a/7af5dbanykisp0000015newa_1.jpg',
-      desc: 'Isopure Zero Carb 100% Whey Protein Isolate Powder - 7.5 lbs (Strawberries & Cream)',
+      desc: 'Isopure Zero Carb 100% Whey Protein Isolate Powder - 7.5' ,
       rating: '★★★',
       price: 2608,
       off:"20% OFF",
@@ -36,7 +36,7 @@ let healthData = [
     },
     {
       image_url: 'https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/7/b/7b24dbanykisp0000014newa_1.jpg',
-      desc: 'Isopure Zero Carb 100% Whey Protein Isolate Powder - 3 lbs (Strawberries & Cream)',
+      desc: 'Isopure Zero Carb 100% Whey Protein Isolate Powder - ',
       rating: '★★★★',
       price: 1392,
       off:"20% OFF",
@@ -45,7 +45,7 @@ let healthData = [
     },
     {
       image_url: 'https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/c/1/c14cbbbnykopn0000004_1.jpg',
-      desc: 'Optimum Nutrition (ON) Gold Standard 100% Whey Protein Powder - 5 lbs (Extreme Milk Chocolate)',
+      desc: 'Optimum Nutrition (ON) Gold Standard 100% Whey Prot',
       rating: '★★★★',
       price: 4468,
       off:"20% OFF",
@@ -54,7 +54,7 @@ let healthData = [
     },
     {
       image_url: 'https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/a/4/a429e638908009918086_main.jpg',
-      desc: 'OZiva Protein & Herbs for Men,for Lean Muscle, Better Stamina and Recovery, Cafe Mocha',
+      desc: 'OZiva Protein & Herbs for Men,for Lean Muscle, Better',
       rating: '★★★★',
       price: 3224,
       off:"20% OFF",
@@ -63,7 +63,7 @@ let healthData = [
     },
     {
       image_url: 'https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/f/5/f50db0a748927059915__1_.jpg',
-      desc: 'Optimum Nutrition (ON) Gold Standard 100% Whey Protein Powder Vanilla Ice Cream - 1Lbs',
+      desc: 'Optimum Nutrition (ON) Gold Standard 100% Whey Protein',
       rating: '★★',
       price: 2555,
       off:"20% OFF",
@@ -71,7 +71,7 @@ let healthData = [
     },
     {
       image_url: 'https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/f/8/f82db0a748927056358__1_.jpg',
-      desc: 'Optimum Nutrition (ON) Gold Standard 100% Whey Protein Powder Vanilla Ice Cream - 5Lbs',
+      desc: 'Optimum Nutrition (ON) Gold Standard 100% Whey Protein',
       rating: '★★★★',
       price: 4019,
       off:"20% OFF",
@@ -80,7 +80,7 @@ let healthData = [
     },
     {
       image_url: 'https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/8/1/812280f5056281100415.jpg',
-      desc: 'Myprotein Impact Whey Isolate - Chocolate Brownie',
+      desc: 'Myprotein Impact Whey Isolate - Chocolate Brownie  Prote',
       rating: '★★★',
       price: 1571,
       off:"20% OFF",
@@ -88,7 +88,7 @@ let healthData = [
     },
     {
       image_url: 'https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/9/5/959adba89094024949newa_1.jpg',
-      desc: 'Isopure Zero Carb 100% Whey Protein Isolate Powder Cookies & Cream - 3Lbs',
+      desc: 'Isopure Zero Carb 100% Whey Protein Isolate Powd',
       rating: '★★★★',
       price: 1753,
       off:"30% OFF",
@@ -97,7 +97,7 @@ let healthData = [
     },
     {
       image_url: 'https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/c/b/cb15b99ISOPU00000001-1.jpg',
-      desc: 'Isopure Low Carb 100% Whey Protein Isolate Powder - Dutch Chocolate',
+      desc: 'Isopure Low Carb 100% Whey Protein Isolate Powder',
       rating: '★★',
       price: 4785,
       off:"30% OFF",
@@ -105,7 +105,7 @@ let healthData = [
     },
     {
       image_url: 'https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/7/4/748927065824_1_1.jpg',
-      desc: 'Optimum Nutrition (ON) Gold Standard 100% Whey Protein Powder Double Rich Chocolate - 1Lbs',
+      desc: 'Optimum Nutrition (ON) Gold Standard 100% Whey ',
       rating: '★★★★',
       price: 3585,
       off:"30% OFF",
@@ -114,7 +114,7 @@ let healthData = [
     },
     {
       image_url: 'https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/0/c/0cb9dba89094024925newa_1.jpg',
-      desc: 'Isopure Low Carb 100% Whey Protein Isolate Powder Chocolate - 3Lbs',
+      desc: 'Isopure Low Carb 100% Whey Protein Isolate Powde',
       rating: '★★',
       price: 3238,
       off:"30% OFF",
@@ -122,7 +122,7 @@ let healthData = [
     },
     {
       image_url: 'https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/8/e/8ecfb0a748927056365__1_.jpg',
-      desc: 'Optimum Nutrition (ON) Gold Standard 100% Whey Protein Powder Double Rich Chocolate - 5Lbs',
+      desc: 'Optimum Nutrition (ON) Gold Standard 100% Whey P',
       rating: '★★★★',
       price: 1309,
       off:"30% OFF",
@@ -131,7 +131,7 @@ let healthData = [
     },
     {
       image_url: 'https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/7/4/748927065725_1.jpg',
-      desc: 'Optimum Nutrition (ON) Gold Standard 100% Whey Protein Powder Double Rich Chocolate - 2Lbs',
+      desc: 'Optimum Nutrition (ON) Gold Standard 100% Whe',
       rating: '★★★',
       price: 1933,
       off:"40% OFF",
@@ -148,7 +148,7 @@ let healthData = [
     },
     {
       image_url: 'https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/9/0/90200002_1new.jpg',
-      desc: 'GNC AMP Gold 100% Whey Protein Advanced Double Rich Chocolate Powder 4.4Lbs',
+      desc: 'GNC AMP Gold 100% Whey Protein Advanced Double Rich',
       rating: '★★',
       price: 735,
       off:"40% OFF",
@@ -156,7 +156,7 @@ let healthData = [
     },
     {
       image_url: 'https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/c/6/c603a938903557544961_1.jpg',
-      desc: 'myDaily Lean Protein for Women - Weight Loss, Active Lifestyle & Immunity - Chocolate',
+      desc: 'myDaily Lean Protein for Women - Weight Loss, Active',
       rating: '★★★★',
       price: 3356,
       off:"40% OFF",
@@ -165,7 +165,7 @@ let healthData = [
     },
     {
       image_url: 'https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/6/7/6748e668904221699383_0.jpg',
-      desc: 'As-It-Is Nutrition Whey Protein Isolate',
+      desc: 'As-It-Is Nutrition Whey Protein Isolate  Protein Powde',
       rating: '★★',
       price: 1153,
       off:"40% OFF",
@@ -184,9 +184,21 @@ let healthData = [
         var div = document.createElement("div")
         div.setAttribute("id", "box") 
 
+        var anchor = document.createElement("a")
+        anchor.setAttribute("id", "anchor")
+
+        anchor.setAttribute("href", "proDesc.html")
+        anchor.setAttribute("target", "_blank")
+
         var image = document.createElement("img")
         image.setAttribute("src", elem.image_url)
         image.setAttribute("id", "images")
+        anchor.append(image)
+
+        image.addEventListener("click",function(){
+          gotoProDesc(elem)
+      })
+
 
         var desc = document.createElement("p")
         desc.textContent = elem.desc
@@ -223,7 +235,7 @@ let healthData = [
 
         btnDiv.append(icon,button)
 
-       div.append(image, desc, priceDiv, rating, btnDiv)
+       div.append(anchor, desc, priceDiv, rating, btnDiv)
        
        document.getElementById("product-div").append(div)
 
@@ -312,4 +324,10 @@ var cartData = JSON.parse(localStorage.getItem("cart-Data")) || []
 function setTocart(elem){
    cartData.push(elem)
    localStorage.setItem("cart-product", JSON.stringify(cartData))
+}
+
+
+
+function  gotoProDesc(elem){
+  localStorage.setItem("desc", JSON.stringify(elem))
 }

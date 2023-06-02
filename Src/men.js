@@ -59,7 +59,7 @@ var mensProducts=[
     } , 
     {
         image_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/7/8/783320971563_2_.jpg",
-        desc:"BVLGARI Man In Black Eau De Parfum hfeu eukwf uefhu wefuh webfjek fwejbjk ujwefu",
+        desc:"BVLGARI Man In Black Eau De Parfum hfeu eukwf uefhu wefu",
         max:8999,
         price:6500,
         off:"30% OFF",
@@ -69,7 +69,7 @@ var mensProducts=[
 
     {
         image_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/b/e/beardo-hair-growth-oil.jpg",
-        desc:"Beardo Hair Growth Oil bdfejkwdfjwfdjwefjwfe bewfwkf wejkfbejkwfbe",
+        desc:"Beardo Hair Growth Oil bdfejkwdfjwfdjwefjwfe",
         max:750,
         price:650,
         off:"25% OFF",
@@ -77,7 +77,7 @@ var mensProducts=[
     },
     {
         image_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/5/7/57c37308904223818706_1.jpg",
-        desc:"Ustraa Hair Growth Vitalizer - Boost Hair Growth, Prevents H...",
+        desc:"Ustraa Hair Growth Vitalizer - Boost Hair Growth, P",
         max:750,
         price:550,
         off:"25% OFF",
@@ -101,7 +101,7 @@ var mensProducts=[
     } ,  
     {
         image_url:"https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/f/1/f1f1e04NYMCFN0000035_nws1.jpg",
-        desc:"MCaffeine Coffee Look Gift Kitl lorem h fhe ekhfeu ehfik ejkfeu ekfe",
+        desc:"MCaffeine Coffee Look Gift Kitl lorem h fhe ekhfeu ehfik ",
         max:2550,
         price:1999,
         off:"10% OFF",
@@ -169,15 +169,27 @@ var mensProducts=[
   
 
 showMenSection(mensProducts)
+
 function showMenSection(data){
     document.getElementById("product-div").textContent =""
     data.map((elem)=>{
         var div = document.createElement("div")
         div.setAttribute("id", "box") 
+           
+        var anchor = document.createElement("a")
+        anchor.setAttribute("id", "anchor")
 
+        anchor.setAttribute("href", "proDesc.html")
+        anchor.setAttribute("target", "_blank")
+       
         var image = document.createElement("img")
         image.setAttribute("src", elem.image_url)
         image.setAttribute("id", "images")
+        anchor.append(image)
+        image.addEventListener("click",function(){
+            gotoProDesc(elem)
+        })
+
 
         var desc = document.createElement("p")
         desc.textContent = elem.desc
@@ -204,10 +216,11 @@ function showMenSection(data){
         btnDiv.setAttribute("id", "btnDiv")
 
         var button = document.createElement("button")
-        button.textContent  = "Add to cart"
+        button.textContent  = "Add to bag"
         button.setAttribute("id", "button")
         button.addEventListener("click", function(){
             setTocart(elem)
+
         })
 
         var icon = document.createElement("i")
@@ -215,16 +228,16 @@ function showMenSection(data){
 
         btnDiv.append(icon,button)
 
-       div.append(image, desc, priceDiv, rating, btnDiv)
+       div.append(anchor, desc, priceDiv, rating, btnDiv)
        
        document.getElementById("product-div").append(div)
 
 
     })
 }
+     
 
-
-
+   
   function sortByPrice() {
         var value = document.getElementById("select-price").value;
     
@@ -296,17 +309,17 @@ function showMenSection(data){
   }
 
 
-
-
-
   var cartData = JSON.parse(localStorage.getItem("cart-product")) || []
-  function setTocart(elem){
+   function setTocart(elem){
      cartData.push(elem)
      localStorage.setItem("cart-product", JSON.stringify(cartData))
-     window.location.href = "proDesc.html"
+  
   }
   
-  export{ showMenSection }
+ 
+  function  gotoProDesc(elem){
+     localStorage.setItem("desc", JSON.stringify(elem))
+  }
 
   
   
