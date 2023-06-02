@@ -10,6 +10,7 @@ function check(){
       
       if((mobile===ele.mobile ||mobile===ele.email) && (password===ele.password)){
         alert("Welcome Back Nykaa User")
+        window.location.href = "index.html";
         flag=1;
       }
      
