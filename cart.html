@@ -5,14 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="./styles/cart.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 </head>
 <body>
     <div class="navbar">
-        <div class="logo"><i class="bi bi-arrow-left"></i>Bag<span id="cart-size"></span><span id="itemtext">items</span></div>
-    </div>
+        <div class="logo">
+            <i class="bi bi-arrow-left"></i><span id="bag">Bag</span><span id="cart-size"></span><span id="itemtext">items</span>
+        </div>
+    </div> 
     <div class="emptycart" id="emptycart">
         
     </div>
@@ -40,17 +42,16 @@
                     <p>₹<span id="cutprice">70</span> Free</p>
                 </div>
             </div>
-            <div class="bt" id="bt">
-                <div class="total">
-                    <p>₹<span id="grandtotalprice"></span></p>
-                    <p>Grand Total</p>
-                </div>
-                <button type="button" class="btn btn-primary">Proceed <i class="bi bi-arrow-right"></i></button>
-            </div> 
         </div>
     </div>
-    
-<script src="cart.js"></script>
-<script src="dummydata.js"></script>
+    <div class="bt" id="bt">
+        <div class="total">
+            <p>₹<span id="grandtotalprice"></span></p>
+            <p>Grand Total</p>
+        </div>
+        <button type="button" class="btn btn-primary">Proceed <i class="bi bi-arrow-right"></i></button>
+    </div> 
+<script src="./scripts/cart.js"></script>
+<script src="./scripts/dummydata.js"></script>
 </body>
 </html>

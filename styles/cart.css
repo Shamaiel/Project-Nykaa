@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -9,10 +9,19 @@ body{
 div.navbar{
     background-color:white;
     font-size: 40px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid  rgb(220, 212, 212);
     position: sticky;
-    top: 0;
+    top:0;
+    z-index:1;
 } 
+div.navbar i{
+    margin-left:20px;
+    margin-right:20px;
+    font-weight:bold;
+}
+div.navbar #bag{
+    margin-right: 5px;
+}
 .item{
     display: flex;
     flex-direction: column;
@@ -53,10 +62,12 @@ img{
     display: flex;
     flex-direction: column;
     gap:20px;
+    margin-bottom:40px;
 }
 .cart-layout{
     display: flex;
-    justify-content: space-around;
+    justify-content:center;
+    gap:10px;
 }
 .receipt{
     height:50%;
@@ -76,12 +87,25 @@ img{
     font-size:25px;
     margin-left:4px;
 }
-.bt{
+div.bt{
     /* width: 30%; */
-    /* margin-left:22%;                                      */
+    /* margin-left:22%;*/
+    width: 100%;
+    position:fixed;
+    margin-bottom: 0;
     display: flex;
     align-items: center;
-    justify-content:  space-between;
+    justify-content:  space-between; 
+    bottom: 0;
+    border-top: 1px solid rgb(220, 212, 212);
+    background-color: white;
+    z-index: 1;
+}
+div.bt>div{
+    margin-left: 10px;
+}
+div.bt>button{
+    margin-right: 10px;
 }
 button{ 
     font-size:40px;
@@ -115,6 +139,18 @@ i:hover{
     text-decoration: line-through;
 }
 @media only screen and (max-width:640px){
+    div.navbar{
+        position: sticky;
+        top: 0;
+        font-size:30px;
+    }
+    #itemtext,#cart-size{
+        font-size:20px;
+    }
+    div.bt{
+        position: sticky;
+        bottom: 0;
+    }
     .promo{
         width: 100%;
     }
@@ -135,5 +171,6 @@ i:hover{
     }
     .receipt>div:first-of-type{
         justify-content: space-between;
+        margin-right: 20px;
     }
 }
