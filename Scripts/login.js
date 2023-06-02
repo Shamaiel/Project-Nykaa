@@ -10,8 +10,9 @@ function check(){
       
       if((mobile===ele.mobile ||mobile===ele.email) && (password===ele.password)){
         alert("Welcome Back Nykaa User")
-        window.location.href = "index.html";
+      
         flag=1;
+        login()
       }
      
   })
@@ -22,5 +23,8 @@ function check(){
 }
  function signup(){
   window.location.href = "signup.html";
+ }
+ function login(){
+  window.location.href = "index.html";
  }
  
