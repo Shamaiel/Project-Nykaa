@@ -144,15 +144,17 @@ i {
       
   }
   #imgSetter img{
-      width: 100%;
-      height: 950%;
+      width: 96%;
+      height: 496%;
       object-fit: cover;
+      margin-top: 28%;
   }
  #imgSetter{
      /* border: 2px solid darkblue; */
-     width: 100px;
+     width: 79px;
      height: 5px;
      cursor: pointer;
+     
  }
  #titleSetup{
      padding-top: 25px;
@@ -604,6 +606,134 @@ margin-top: 10px;
     cursor: pointer;
     border-radius: 50px;
   }
-
   
+  .main-img img{
+    width: 100%;
+  }
+  .pink img{
+    width: 100%;
+  }
+  .pink h2{
+    text-align: center;
+    padding:  7px;
+  }
+
+  .brand h2{
+    text-align: center;
+  }
+  .card{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+  }
+  .card img{
+    margin-inline: 22px;
+    width: 44%;
+  }
+  .brand h2{
+    text-align: center;
+    padding: 22px;
+  }
+
+  .topbrd{
+    display: flex;
+  }
+
+  .topbrd img{
+    margin-inline: 22px;
+    width: 44%;
+  }
+
+  .only-nykaa h2{
+    text-align: center;
+    padding: 22px;
+
+  }
+
+  .only-nykaa .only{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+  }
+  .only img{
+    width: 44%;
+    margin-inline: 22px;
+  }
+  .makeup{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 42px;
+  }
+  .makeup img{
+    width: 313px;
+    margin-inline: 18px;
+  }
+
+
+  .special h2{
+    text-align: center;
+    padding: 22px;
+  }
+  .special .curation{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+  }
+  .curation img{
+    margin-inline: 22px;
+    width: 54%; 
+
+  }
+  .ceauty h2{
+    text-align: center;
+    padding: 22px;
+  }
+
+  .ceauty .advice{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+
+  }
+
+  .advice img{
+    margin-inline: 22px;
+    width: 44%;
+  }
+
+
+.footer{
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  background-color:rgba(0, 0, 0, 0.25);
+  
+}
+.footer .list li ul a{
+  list-style: none;
+}
+.footer .list{
+  flex-direction: column;
+}
+.footer .list ul li{
+  list-style: none;
+}
+
+.footer .list ul li a{
+  font-weight: 600;
+  font-size: 14px;
+}
+.footer .list ul li h2{
+  font-size: 14px;
+
+}
+
+
+.last-pink{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3%;
+}
  
