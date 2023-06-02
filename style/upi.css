@@ -1,0 +1,94 @@
+body {
+  margin: 20px;
+  font-family: Inter, sans-serif;
+}
+#upr1 {
+  font-size: 20px;
+  font-weight: bold;
+}
+#midc1 > div {
+  padding: 0px 15px;
+}
+#midc1 > div p {
+  display: inline;
+  margin-top: 0px;
+}
+#number {
+  margin-top: 20px;
+  padding: 10px 60px 10px 5px;
+  background-color: rgb(203, 203, 235);
+}
+#cvv {
+  margin-top: 20px;
+  padding: 10px 60px 10px 5px;
+  background-color: rgb(203, 203, 235);
+}
+#checkbox {
+  margin-top: 20px;
+}
+#san2 {
+  color: rgb(21, 21, 216);
+}
+#midc1 button {
+  margin-top: 20px;
+  padding: 10px 80px;
+}
+#selectcard {
+  padding: 5px 40px 5px 10px;
+}
+#btn2 {
+  margin-top: 20px;
+  padding: 10px 44px;
+}
+#btn3 {
+  margin-top: 20px;
+  padding: 10px 83px;
+}
+#number1 {
+  margin-top: 20px;
+  padding: 10px 60px 10px 5px;
+  background-color: rgb(203, 203, 235);
+}
+#mildo {
+  display: flex;
+}
+#btn5 {
+  margin-top: 20px;
+  padding: 10px 85px;
+}
+#number6 {
+  padding: 10px 60px 10px 5px;
+  background-color: rgb(203, 203, 235);
+}
+#btn6 {
+  margin-top: 20px;
+  padding: 10px 108px;
+}
+#number7 {
+  padding: 10px 100px 10px 5px;
+  background-color: rgb(203, 203, 235);
+}
+#num7 {
+  margin-top: 20px;
+}
+#pin {
+  padding: 4px;
+}
+#btn7 {
+  padding: 5px 17px;
+  margin: 8px;
+}
+#btn8 {
+  margin-top: 10px;
+  padding: 10px 146px;
+}
+button{
+  background-color: rgb(239, 8, 93);
+  margin-top: 20px;
+  padding: 10px 138px;
+  border-radius: 7px;
+  border: 0px;
+}
+.paymentimg{
+  margin-left: 19%;
+}

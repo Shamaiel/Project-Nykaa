@@ -1,0 +1,183 @@
+body {
+  margin: 130px;
+  font-family: Inter, sans-serif;
+}
+#upr1 {
+  font-size: 20px;
+  font-weight: bold;
+}
+#midl1 {
+  font-size: 15px;
+}
+#midl1 > div:nth-child(2) {
+  display: flex;
+  margin-top: 30px;
+  margin-left: -110px;
+}
+#midl1 > div > div {
+  margin: 10px;
+}
+#midl2 p {
+  display: block;
+}
+#upi {
+  padding: 5px 122px 5px 5px;
+  background-color: rgb(203, 203, 224);
+  margin-top: -10px;
+}
+#btn1 button {
+  margin-top: 20px;
+  padding: 10px 138px;
+  border-radius: 7px;
+  border: 0px;
+}
+.netbankstyle{
+  width: 50%;
+  margin-left: 400px;
+}
+#color {
+  margin: 3px 0px 26px 157px;
+  color: blue;
+}
+#color:hover{
+  color: blueviolet;
+}
+#text{
+  padding: 5px 39px 5px 10px;
+}
+#netbank{
+  margin: 3px 0px 26px 157px;
+  padding: 9px 132px 5px 10px;
+  text-align: center;
+}
+.netbankstyle div:nth-child(2){
+background-color: rgb(194, 194, 219);
+padding: 5px;
+}
+
+#payletter{
+display: flex;
+}
+#payletter >div img{
+  margin-right: 19px;
+   margin-top: 21px;
+}
+#payletter >div p{
+margin-top: -10px;
+}
+
+#nav a{
+  color: black;
+  text-decoration: none;
+}
+#nav a:hover{
+  color: rgb(237, 11, 11);
+}
+
+#mainAddress>div:nth-child(2){
+  display: flex;
+  justify-content: space-between;
+}
+
+#address p:nth-child(1){
+  font-size: 36px;
+    font-weight: 600;
+    line-height: 40px;
+    color: rgba(0, 19, 37, 0.92);
+    text-overflow: ellipsis;
+}
+#address p:nth-child(2){
+  font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: rgba(0, 19, 37, 0.64);
+    margin-top: -31px;
+}
+#Storepart{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+ gap: 20px;
+}
+
+.storedata{
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  border: 1px dashed rgba(0, 19, 37, 0.16);
+  min-width: 326px;
+  min-height: 148px;
+  flex-basis: 50%;
+  margin-bottom: 14px;
+  padding: 24px;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  border-radius: 8px;
+}
+/* .storedata1{
+  
+  border: 1px dashed rgba(0, 19, 37, 0.16);
+  min-width: 326px;
+  min-height: 148px;
+  flex-basis: 50%;
+  margin-bottom: 14px;
+  padding: 24px;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  border-radius: 8px;
+} */
+#Storepart>div:nth-child(1) img{
+  margin-bottom: -10px;
+}
+#Storepart>div:nth-child(1) p+p{
+margin-top: 0px;
+color: rgb(231, 41, 72);
+}
+#Storepart>div:nth-child(1):hover{
+  background-color: rgb(251, 222, 227);
+}
+
+/* .storedata1{
+  width: 25%;
+  height: 100vh;
+  border: 1px solid red;
+  justify-content: flex-end;
+} */
+#body1{
+  margin: 65px;
+  text-align: end;
+  margin-top: 10px;
+}
+.store1{
+  display: flex;
+  flex-direction: column;
+  display: inline;
+  margin-top: 0px;
+}
+.store1 p:nth-child(1){
+  font-size: 30px;
+  font-weight: 600;
+margin-right: 210px;
+}
+#san{
+  margin-right: 170px;
+}
+.Main{
+  padding: 20px 150px 20px 10px;
+  border-radius: 8px;
+  background-color: rgb(230, 230, 234);
+}
+
+#btnAddress{
+border-radius: 10px;
+  padding: 16px 100px;
+  color:white;
+  background-color: rgb(229, 52, 108);
+  border: 0px;
+}
+#store2{
+  margin-left: 300px;
+  margin-top: -80px;
+}
