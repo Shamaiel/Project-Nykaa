@@ -45,7 +45,7 @@ body{
     width: 30%;
  
     /* border: 2px solid red; */
-    background-color: rgb(199, 199, 234);
+    background-color:#f3f4f5;
 }
 #mid2>div>div{
     display: flex;
