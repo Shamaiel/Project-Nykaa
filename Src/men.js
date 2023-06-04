@@ -214,19 +214,23 @@ function showMenSection(data){
        
         var btnDiv = document.createElement("div")
         btnDiv.setAttribute("id", "btnDiv")
-
+        
+        // var anc = document.createElement("a")
+        
         var button = document.createElement("button")
         button.textContent  = "Add to bag"
         button.setAttribute("id", "button")
         button.addEventListener("click", function(){
             setTocart(elem)
+            window.location.href = "cart.html"
 
         })
+    
 
         var icon = document.createElement("i")
         icon.setAttribute("class", "fa-regular  fa-heart");
 
-        btnDiv.append(icon,button)
+        btnDiv.append(icon, button)
 
        div.append(anchor, desc, priceDiv, rating, btnDiv)
        

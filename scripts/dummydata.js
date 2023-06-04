@@ -198,10 +198,11 @@ var shopItemsData = [
     }   
    
 ] 
+var cartData=JSON.parse(localStorage.getItem('cart-product'))
 var i='a';
-mensProducts.forEach(function(data){
+cartData.forEach(function(data){
   data.id=i;
   i=i+1;
   data['item']=1;
 })
-  localStorage.setItem('cartitems',JSON.stringify(mensProducts));
+localStorage.setItem('cartitems',JSON.stringify(cartData));

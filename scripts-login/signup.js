@@ -21,5 +21,6 @@ function adddata() {
 }
 function login(){
     alert("You are successfully signed up.Press OK to proceed to login page")
-window.location.href = "login.html";
+    window.location.href = "login.html";
 }
+

@@ -1,4 +1,12 @@
 /* dropdown box of input */
+*{
+  font-family: 'Inter', sans-serif ;
+}
+
+.footer ul li a{
+  margin-top: 10px;
+}
+
 #seach-dropdown {
   display: flex;
   flex-direction: column;
@@ -315,8 +323,19 @@ background-color: rgb(237,237,237);
     }
     a{
       text-decoration: none;
-      color: gray;
+      color:white;
     }
+    .footer h2{
+      color: white;
+    }
+    .footer li{
+     list-style: none;
+    }
+
+    .footer ul > li{
+     margin-top: 4px;
+     }
+    
    
 
     .column1,.column2,.column3,.column4,.column5,.column6,.column7{
@@ -720,9 +739,14 @@ margin-top: 10px;
   display: flex;
   justify-content: center;
   justify-content: space-around;
-  background-color:rgba(0, 0, 0, 0.25);
+  padding: 33px 171px;
+  background-color:rgb(140,141,148);
+ 
   
 }
+
+
+
 .footer .list li ul a{
   list-style: none;
 }

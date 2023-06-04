@@ -1,4 +1,8 @@
 /* dropdown box of input */
+*{
+  font-family: Inter, sans-serif;
+}
+
 #seach-dropdown {
   display: flex;
   flex-direction: column;

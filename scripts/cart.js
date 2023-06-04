@@ -1,4 +1,4 @@
-var cartitems=JSON.parse(localStorage.getItem('cartitems'));
+var cartitems = JSON.parse(localStorage.getItem('cartitems'));
 var cart=document.querySelector('#cart');
 var promo=document.querySelector('#promo');
 var bt=document.querySelector('#bt');
@@ -57,7 +57,7 @@ function generateCartItems(){
         promo.innerHTML="";
         bt.innerHTML="";
         emptycart.innerHTML=
-            `<img src="images/empty-cart-4816550-4004141.png" alt="">
+            `<img src="" alt="">
             <p>Your Shopping Bag is empty</p>
             <p>This feels too light,Go on, add all your favourites</p>
             <button type="button" class="btn btn-primary">Start Shopping</button>`

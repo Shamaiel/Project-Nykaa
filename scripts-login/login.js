@@ -28,3 +28,22 @@ function check(){
   window.location.href = "index.html";
  }
  
+
+
+ var customerarray = JSON.parse(localStorage.getItem("credentials")) || [];
+ function displayName(customerarray) {
+   customerarray.map((elem) => {
+     var userName = elem.name;
+     document.getElementById("GoToLogin1").display = "none";
+     document.getElementById("getn").textContent = userName;
+    
+   });
+ }
+
+ 
+
+ 
+
+
+
+ 

@@ -87,6 +87,19 @@ setInterval(function () {
       nextSlide1();
     }
   }, 2000);
+  
+  
+  var customerarray = JSON.parse(localStorage.getItem("credentials")) || [];
 
-
+  function displayName(customerarray) {
+    customerarray.map((elem) => {
+      var userName = elem.name;
+      document.getElementById("GoToLogin1").display = "none";
+      document.getElementById("getn").textContent = userName;
+     
+    });
+  }
+  
+  displayName(customerarray);
+  
  

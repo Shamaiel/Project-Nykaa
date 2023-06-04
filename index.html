@@ -8,14 +8,18 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
 
-    <script src="https://kit.fontawesome.com/e1077d28cb.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://kit.fontawesome.com/17cb428520.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="./styles/style.css"> -->
     <link rel="stylesheet" href="Cart.css">
+    <link rel="stylesheet" href="nv.css">
     <link rel="icon" href="//images-static.nykaa.com/media/favicon/default/nykaa_favicon_a.png" type="image/x-icon">
-    <title>Buy Cosmetics Products & Beauty Products Online in India at Best Price | Nykaa</title>
+    <title>Home Page</title>
   </head>
   <body>
-    <div id="finalHeader">
+    
+   <!-- NAVBAR START-->
+     
+   <div id="finalHeader">
 
     <div id="header1Data">
       <div id="messageDiv">
@@ -27,18 +31,18 @@
         
         <div id="button1Flex">
             <i class="fas fa-gift fa-1x"></i>
-            <p style="color: black;margin-top: 5px;padding-left: 5px;font-size: 15px;">Gift Card   |</p>
+            <p style="color: black;margin-top: 5px;padding-left: 5px;font-size: 15px; background-color: #FF90BA;" >Gift Card   |</p>
         </div>
 
         <div id="button2Flex">
             <i class="fas fa-question-circle"></i>
-            <p style="color: black;margin-top: 5px;padding-left: 5px;font-size: 15px;">Help</p>
+            <p style="color: black;margin-top: 5px;padding-left: 5px;font-size: 15px;background-color: #FF90BA; ">Help</p>
         </div>
 
     </div>
     </div>
      <!---second header part-->
-
+    
     <div id="header2Container">
         <div id="setHeader2">
             <div id="imgSetter">
@@ -46,9 +50,9 @@
             </div>
             <div id="titleSetup">
                 <span>CATEGORIES</span>
-                <span>BRANDS</span>
+                <span>MEN'S</span>
                 <span>LUXE</span>
-                <span>BEAUTY AVICE</span>
+                <span>BEAUTY ADVICE</span>
             </div>
             <!-- <div id="inputSetup">
                 <span><i class="fas fa-search"></i></span>
@@ -56,7 +60,8 @@
                 
             </div> -->
             <div class="search">
-                <input id="inp" onclick="clickedInput()" placeholder="&#xf002 Search on Nykaa" >
+              <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                <input id="inp" onclick="clickedInput()" placeholder=" Search on Nykaa" >
 
                   <div>
                     <ul id="seach-dropdown">
@@ -77,8 +82,8 @@
               </div>
 
             <div id="accountSetup">
-                <img id="GoToLogin" class="imgIcon" src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZpZXdCb3g9IjAgMCAxNzIgMTcyIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9Im5vbnplcm8iIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0iYnV0dCIgc3Ryb2tlLWxpbmVqb2luPSJtaXRlciIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2UtZGFzaGFycmF5PSIiIHN0cm9rZS1kYXNob2Zmc2V0PSIwIiBmb250LWZhbWlseT0ibm9uZSIgZm9udC13ZWlnaHQ9Im5vbmUiIGZvbnQtc2l6ZT0ibm9uZSIgdGV4dC1hbmNob3I9Im5vbmUiIHN0eWxlPSJtaXgtYmxlbmQtbW9kZTogbm9ybWFsIj48cGF0aCBkPSJNMCwxNzJ2LTE3MmgxNzJ2MTcyeiIgZmlsbD0ibm9uZSI+PC9wYXRoPjxnIGZpbGw9IiMwMDAwMDAiPjxwYXRoIGQ9Ik04NiwxNC4zMzMzM2MtMTkuNzI2NTUsMCAtMzUuODMzMzMsMTYuMTA2OCAtMzUuODMzMzMsMzUuODMzMzNjMCwxOS43MjY1MyAxNi4xMDY3OSwzNS44MzMzMyAzNS44MzMzMywzNS44MzMzM2MxOS43MjY1NSwwIDM1LjgzMzMzLC0xNi4xMDY4IDM1LjgzMzMzLC0zNS44MzMzM2MwLC0xOS43MjY1MyAtMTYuMTA2NzksLTM1LjgzMzMzIC0zNS44MzMzMywtMzUuODMzMzN6TTg2LDI1LjA4MzMzYzEzLjkxNjgyLDAgMjUuMDgzMzMsMTEuMTY2NTIgMjUuMDgzMzMsMjUuMDgzMzNjMCwxMy45MTY4MSAtMTEuMTY2NTEsMjUuMDgzMzMgLTI1LjA4MzMzLDI1LjA4MzMzYy0xMy45MTY4MiwwIC0yNS4wODMzMywtMTEuMTY2NTIgLTI1LjA4MzMzLC0yNS4wODMzM2MwLC0xMy45MTY4MSAxMS4xNjY1MSwtMjUuMDgzMzMgMjUuMDgzMzMsLTI1LjA4MzMzek00NC43OTE2NywxMDAuMzMzMzNjLTguODQxODgsMCAtMTYuMTI1LDcuMjgzMTIgLTE2LjEyNSwxNi4xMjV2NC4yOTcyYzAsMTAuNTM4MDkgNi42ODE4OSwxOS45OTA1NCAxNi44NzM4NiwyNi40OTAwN2MxMC4xOTE5Nyw2LjQ5OTUzIDI0LjEzNjgyLDEwLjQyMTA2IDQwLjQ1OTQ3LDEwLjQyMTA2YzE2LjMyMjY1LDAgMzAuMjY3NSwtMy45MjE1MyA0MC40NTk0NywtMTAuNDIxMDZjMTAuMTkxOTcsLTYuNDk5NTMgMTYuODczODYsLTE1Ljk1MTk4IDE2Ljg3Mzg2LC0yNi40OTAwN3YtNC4yOTcyYzAsLTguODQxODggLTcuMjgzMTIsLTE2LjEyNSAtMTYuMTI1LC0xNi4xMjV6TTQ0Ljc5MTY3LDExMS4wODMzM2g4Mi40MTY2N2MzLjAzMzI5LDAgNS4zNzUsMi4zNDE3MSA1LjM3NSw1LjM3NXY0LjI5NzJjMCw1Ljk2Njc0IC0zLjg0MzI2LDEyLjI4NTgzIC0xMS45MDQ3OSwxNy40MjY3NmMtOC4wNjE1Myw1LjE0MDkzIC0yMC4wOTg1Myw4LjczNDM4IC0zNC42Nzg1NSw4LjczNDM4Yy0xNC41ODAwMSwwIC0yNi42MTcwMiwtMy41OTM0NSAtMzQuNjc4NTUsLTguNzM0MzdjLTguMDYxNTMsLTUuMTQwOTMgLTExLjkwNDc5LC0xMS40NjAwMiAtMTEuOTA0NzksLTE3LjQyNjc2di00LjI5NzJjMCwtMy4wMzMyOSAyLjM0MTcxLC01LjM3NSA1LjM3NSwtNS4zNzV6Ij48L3BhdGg+PC9nPjwvZz48L3N2Zz4=" alt="">
-                <span id="GoToLogin1" style="margin-top: 4px;"><p id="getn">Sign in</p>
+                 <img id="GoToLogin" class="imgIcon" src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZpZXdCb3g9IjAgMCAxNzIgMTcyIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9Im5vbnplcm8iIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0iYnV0dCIgc3Ryb2tlLWxpbmVqb2luPSJtaXRlciIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2UtZGFzaGFycmF5PSIiIHN0cm9rZS1kYXNob2Zmc2V0PSIwIiBmb250LWZhbWlseT0ibm9uZSIgZm9udC13ZWlnaHQ9Im5vbmUiIGZvbnQtc2l6ZT0ibm9uZSIgdGV4dC1hbmNob3I9Im5vbmUiIHN0eWxlPSJtaXgtYmxlbmQtbW9kZTogbm9ybWFsIj48cGF0aCBkPSJNMCwxNzJ2LTE3MmgxNzJ2MTcyeiIgZmlsbD0ibm9uZSI+PC9wYXRoPjxnIGZpbGw9IiMwMDAwMDAiPjxwYXRoIGQ9Ik04NiwxNC4zMzMzM2MtMTkuNzI2NTUsMCAtMzUuODMzMzMsMTYuMTA2OCAtMzUuODMzMzMsMzUuODMzMzNjMCwxOS43MjY1MyAxNi4xMDY3OSwzNS44MzMzMyAzNS44MzMzMywzNS44MzMzM2MxOS43MjY1NSwwIDM1LjgzMzMzLC0xNi4xMDY4IDM1LjgzMzMzLC0zNS44MzMzM2MwLC0xOS43MjY1MyAtMTYuMTA2NzksLTM1LjgzMzMzIC0zNS44MzMzMywtMzUuODMzMzN6TTg2LDI1LjA4MzMzYzEzLjkxNjgyLDAgMjUuMDgzMzMsMTEuMTY2NTIgMjUuMDgzMzMsMjUuMDgzMzNjMCwxMy45MTY4MSAtMTEuMTY2NTEsMjUuMDgzMzMgLTI1LjA4MzMzLDI1LjA4MzMzYy0xMy45MTY4MiwwIC0yNS4wODMzMywtMTEuMTY2NTIgLTI1LjA4MzMzLC0yNS4wODMzM2MwLC0xMy45MTY4MSAxMS4xNjY1MSwtMjUuMDgzMzMgMjUuMDgzMzMsLTI1LjA4MzMzek00NC43OTE2NywxMDAuMzMzMzNjLTguODQxODgsMCAtMTYuMTI1LDcuMjgzMTIgLTE2LjEyNSwxNi4xMjV2NC4yOTcyYzAsMTAuNTM4MDkgNi42ODE4OSwxOS45OTA1NCAxNi44NzM4NiwyNi40OTAwN2MxMC4xOTE5Nyw2LjQ5OTUzIDI0LjEzNjgyLDEwLjQyMTA2IDQwLjQ1OTQ3LDEwLjQyMTA2YzE2LjMyMjY1LDAgMzAuMjY3NSwtMy45MjE1MyA0MC40NTk0NywtMTAuNDIxMDZjMTAuMTkxOTcsLTYuNDk5NTMgMTYuODczODYsLTE1Ljk1MTk4IDE2Ljg3Mzg2LC0yNi40OTAwN3YtNC4yOTcyYzAsLTguODQxODggLTcuMjgzMTIsLTE2LjEyNSAtMTYuMTI1LC0xNi4xMjV6TTQ0Ljc5MTY3LDExMS4wODMzM2g4Mi40MTY2N2MzLjAzMzI5LDAgNS4zNzUsMi4zNDE3MSA1LjM3NSw1LjM3NXY0LjI5NzJjMCw1Ljk2Njc0IC0zLjg0MzI2LDEyLjI4NTgzIC0xMS45MDQ3OSwxNy40MjY3NmMtOC4wNjE1Myw1LjE0MDkzIC0yMC4wOTg1Myw4LjczNDM4IC0zNC42Nzg1NSw4LjczNDM4Yy0xNC41ODAwMSwwIC0yNi42MTcwMiwtMy41OTM0NSAtMzQuNjc4NTUsLTguNzM0MzdjLTguMDYxNTMsLTUuMTQwOTMgLTExLjkwNDc5LC0xMS40NjAwMiAtMTEuOTA0NzksLTE3LjQyNjc2di00LjI5NzJjMCwtMy4wMzMyOSAyLjM0MTcxLC01LjM3NSA1LjM3NSwtNS4zNzV6Ij48L3BhdGg+PC9nPjwvZz48L3N2Zz4=" alt="">
+                 <a href="login.html"><span id="GoToLogin1" ><p id="getn">Sign in</p></a> 
                 
       <div id="accountdropdown">
         <ul id="profile-dropdown">
@@ -112,7 +117,7 @@
     <!--navbar html start-->
     <div id="header3">
         <ul id="subMenu">
-            <li><a href="">Makeup</a>
+            <li><a href="men.html">Men's</a>
 
                 <div class="dropBox1" id="shaving">
                     <div class="column1">
@@ -162,7 +167,7 @@
                 </div>
 
             </li>
-            <li><a href="">Skin</a>
+            <li><a href="perfumes.html">Perfumes</a>
                 <div class="dropBox1" id="beard">
                     <div class="column1">
                         <a href="">Moisturizer</a>
@@ -196,7 +201,7 @@
                       </div>
                 </div>
             </li>
-            <li><a href="">Hair</a>
+            <li><a href="health.html">Health</a>
                 <div class="dropBox1" id="hair">
                     <div class="column1">
                         <a href="">HAIR CARE</a>
@@ -558,7 +563,12 @@
         </ul>
     </div>
 </div>
-    <!--navbar html end-->
+
+
+ <!-- NAVBAR END -->
+
+
+
 <div id="mainBodyPart">
     <!--main-slideshow -->
       <!--main container of slider 1-->
@@ -788,6 +798,9 @@
 </div>
 
 
+<!-- <div id="containerFooter">
+  <div></div>
+</div> -->
 
   
 
