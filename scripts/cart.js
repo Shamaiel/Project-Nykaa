@@ -1,3 +1,12 @@
+var cartData=JSON.parse(localStorage.getItem('cart-product'))
+var i='a';
+cartData.forEach(function(data){
+  data.id=i;
+  i=i+1;
+  data['item']=1;
+})
+localStorage.setItem('cartitems',JSON.stringify(cartData));
+
 var cartitems = JSON.parse(localStorage.getItem('cartitems'));
 var cart=document.querySelector('#cart');
 var promo=document.querySelector('#promo');
@@ -15,6 +24,7 @@ var total=cartitems.reduce(function(acc,obj){
 calculate();
 generateCartItems();
 function generateCartItems(){
+    localStorage.setItem('cartitems',JSON.stringify(cartitems));
     if(cartitems.length!=0){
         var total=cartitems.reduce(function(acc,obj){
             return acc+obj.price*obj.item;
@@ -57,10 +67,10 @@ function generateCartItems(){
         promo.innerHTML="";
         bt.innerHTML="";
         emptycart.innerHTML=
-            `<img src="" alt="">
+            `<img src="./empty-cart-4816550-4004141.webp" alt="">
             <p>Your Shopping Bag is empty</p>
             <p>This feels too light,Go on, add all your favourites</p>
-            <button type="button" class="btn btn-primary">Start Shopping</button>`
+            <button type="button" class="btn btn-primary"><a href="index.html">Start Shopping</a></button>`
     }
     
 }
@@ -106,7 +116,9 @@ function remove(id){
     cartitems.map(function(data,i){
         if(data.id===id.id){
             cartitems.splice(i,1);
+            cartData.splice(i,1);
             localStorage.setItem('cartitems',JSON.stringify(cartitems));
+            localStorage.setItem('cart-product',JSON.stringify(cartData));
             calculate();
             generateCartItems();
             return;
