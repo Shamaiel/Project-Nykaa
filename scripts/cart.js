@@ -15,6 +15,7 @@ var total=cartitems.reduce(function(acc,obj){
 calculate();
 generateCartItems();
 function generateCartItems(){
+    localStorage.setItem('cartitems',JSON.stringify(cartitems));
     if(cartitems.length!=0){
         var total=cartitems.reduce(function(acc,obj){
             return acc+obj.price*obj.item;
@@ -57,10 +58,10 @@ function generateCartItems(){
         promo.innerHTML="";
         bt.innerHTML="";
         emptycart.innerHTML=
-            `<img src="" alt="">
+            `<img src="./empty-cart-4816550-4004141.webp" alt="">
             <p>Your Shopping Bag is empty</p>
             <p>This feels too light,Go on, add all your favourites</p>
-            <button type="button" class="btn btn-primary">Start Shopping</button>`
+            <button type="button" class="btn btn-primary"><a href="index.html">Start Shopping</a></button>`
     }
     
 }

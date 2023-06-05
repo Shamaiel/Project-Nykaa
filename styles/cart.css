@@ -3,6 +3,13 @@
     margin: 0;
     padding: 0;
 }
+.emptycart a{
+    text-decoration: none;
+    color: white;
+}
+.emptycart button{
+    border:none;
+}
 body{
     font-family: 'Inter', sans-serif;
 }
