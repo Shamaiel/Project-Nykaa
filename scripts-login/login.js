@@ -6,13 +6,18 @@ function check(){
   var mobile=document.getElementById("number").value;
   var password=document.getElementById("number2").value;
  // console.log(mobile)
+ if( mobile==="" ||password===""){
+       
+  alert("Fill complete details first")
+}
+else{
   loginarr.map(function(ele){
       
       if((mobile===ele.mobile ||mobile===ele.email) && (password===ele.password)){
         alert("Welcome Back Nykaa User")
       
         flag=1;
-        login()
+        gotoindex()
       }
      
   })
@@ -21,10 +26,11 @@ function check(){
   signup()
   }
 }
+}
  function signup(){
   window.location.href = "signup.html";
  }
- function login(){
+ function gotoindex(){
   window.location.href = "index.html";
  }
  
