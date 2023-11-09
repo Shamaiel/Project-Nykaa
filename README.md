@@ -11,6 +11,46 @@ Team Members
 
 ➎ Sanjeev Kushwaha
 
-This site is made just for education purpose.Please don't enter your any personal details here.We do not belong to Nykaa by any way.We have created this website just for practical implemntation of Html css and javascript that we recently Learned.
+# Nykaa Clone
+
+This project is a clone of Nykaa, an e-commerce platform focusing on beauty and wellness products. It aims to replicate the functionalities and design of Nykaa's website.
+
+## Contributors
+
+### Anshul Gusain
+
+#### Contributions
+- **Login Page:**
+  - Implemented user interface design for the login page.
+  - Integrated form validation for the login fields.
+  - Connected login functionality to the backend services.
+  
+- **Signup Page:**
+  - Developed the frontend layout for the signup page.
+  - Implemented form validation for user registration.
+  - Integrated signup functionality with backend API calls.
+  
+---
+
+
+## Technologies Used
+
+- **Frontend**:
+  - HTML, CSS, JavaScript
+  - React.js
+  - (Any other relevant frontend technologies)
+
+- **Backend**:
+  - Node.js
+  - Express.js
+  - (Any other relevant backend technologies)
+  
+## Setup and Installation
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/your-username/nykaa-clone.git
+
 
 
