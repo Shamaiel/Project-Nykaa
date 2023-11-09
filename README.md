@@ -50,7 +50,7 @@ This project is a clone of Nykaa, an e-commerce platform focusing on beauty and 
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/your-username/nykaa-clone.git
+   git clone https://github.com/Shamaiel/Project-Nykaa.git
 
 
 
